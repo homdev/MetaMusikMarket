@@ -21,27 +21,26 @@ function HomeBanner() {
                 <div className='row gy-5 align-items-stretch'>
                     <div className='col-lg-6 text-center text-lg-start order-2 order-lg-1 py-5'>
                         <h1 data-aos='fade-up' data-aos-delay='100' className='position-relative lh-1'>
-                            Create, sell and collect digital NFTs.
+                            Créer, vendre & collecter des NFT.
                             <div className='shape-3'></div>
                         </h1>
                         <p className='text-muted lead pt-4' data-aos='fade-up' data-aos-delay='200'>
-                            Introducing MetaRealFights, the fully functioning template to create your own decentralized NFT
-                            ecosystem.
+                            C'est le moyen le plus simple de participer à la prochaine vague d'innovation.
                         </p>
                         <p className='text-muted lead pb-4' data-aos='fade-up' data-aos-delay='200'>
-                            This is the easiest way to get in on the next wave of innovation.
+                            Créez votre propre NFT, vendez-le et collectez-le.
                         </p>
                         <ul className='list-inline'>
                             <li className='list-inline-item' data-aos='fade-up' data-aos-delay='300'>
                                 <Link className='btn py-2 btn-gradient-primary' to='/mint'>
                                     <i className='lab la-ethereum me-1'></i>
-                                    Create NFT
+                                    Créer NFT
                                 </Link>
                             </li>
                             <li className='list-inline-item' data-aos='fade-up' data-aos-delay='400'>
                                 <Link className='btn py-2 btn-dark' to='/explore'>
                                     <i className='las la-compass me-1'></i>
-                                    Discover
+                                    Explorer
                                 </Link>
                             </li>
                         </ul>

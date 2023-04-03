@@ -18,11 +18,11 @@ function AuctionsPage() {
 
     return (
         <>
-            {auctionCtx.fetchingLoading ? <FullScreenLoader heading='Updating Auctions' /> : null}
-            {collectionCtx.nftIsLoading ? <FullScreenLoader heading='Fetching Auctions' /> : null}
+            {auctionCtx.fetchingLoading ? <FullScreenLoader heading='Mise à jour des enchères' /> : null}
+            {collectionCtx.nftIsLoading ? <FullScreenLoader heading="Recherche d'enchère" /> : null}
             {auctionCtx.auctionTransactionLoading ? <MetaMaskLoader /> : null}
-            <PageBanner heading='Live Auctions' />
-            <section className='py-5'>
+            <PageBanner heading='Enchère en cours' />
+            <section className='py-5'>  
                 <div className='container py-5'>
                     {auctionCtx.auctionsData.filter((auc) => auc.isPromoted).length > 0 && (
                         <>
@@ -30,7 +30,7 @@ function AuctionsPage() {
                                 <div className='row'>
                                     <div className='col-lg-7 text-center mx-auto'>
                                         <h2 data-aos='fade-up' data-aos-delay='100'>
-                                            Our Featured Auctions
+                                        Nos ventes aux enchères en vedette
                                         </h2>
                                         <p className='lead text-muted' data-aos='fade-up' data-aos-delay='200'>
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus autem, atque
@@ -59,7 +59,7 @@ function AuctionsPage() {
                         <div className='row'>
                             <div className='col-lg-7'>
                                 <h2 data-aos='fade-up' data-aos-delay='100'>
-                                    All Auctions
+                                Toutes les ventes aux enchères
                                 </h2>
                                 <p className='lead text-muted' data-aos='fade-up' data-aos-delay='200'>
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus autem, atque
@@ -85,12 +85,12 @@ function AuctionsPage() {
                         0 &&
                         !auctionCtx.fetchingLoading && (
                             <>
-                                <h4>There're no Auctions at the moment</h4>
+                                <h4>Il n'y a pas d'enchères en ce moment</h4>
                                 <p className='text-muted mb-3'>
                                     Once there'll be Auctions that match is category we'll render them here
                                 </p>
                                 <Link className='btn btn-gradient-primary' to='/'>
-                                    Return Home
+                                Retour à l'accueil
                                 </Link>
                             </>
                         )}

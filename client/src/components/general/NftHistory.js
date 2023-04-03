@@ -41,15 +41,15 @@ function NftHistory({ history, creator, mktAddress, owner, isAuction, creatorNam
                             </div>
                             <div className='ms-3'>
                                 <p className='mb-0 text-sm text-muted'>
-                                    Created By
+                                Créé par
                                     <Link className='text-reset' to={`/users/${creator}`}>
                                         <strong className='ms-2 text-dark'>
-                                            {creator && creatorName === '' ? 'Adi Gallia' : creatorName}
+                                            {creator && creatorName === '' ? 'MetaMusik' : creatorName}
                                         </strong>
                                     </Link>
                                 </p>
                                 <p className='mb-0 text-sm text-muted'>
-                                    at
+                                    à
                                     <strong className='ms-2 fw-normal text-dark text-xs'>
                                         {formteFullDate(createdTime)}
                                     </strong>
@@ -79,9 +79,9 @@ function NftHistory({ history, creator, mktAddress, owner, isAuction, creatorNam
                                             </div>
                                             <div className='ms-3'>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    Transferred to
+                                                Transféré à
                                                     <Link className='text-reset' to='/'>
-                                                        <strong className='ms-2 text-dark'>Marketplace</strong>
+                                                        <strong className='ms-2 text-dark'>Marché</strong>
                                                     </Link>
                                                 </p>
                                                 <p className='mb-0 text-sm text-muted'>
@@ -111,15 +111,15 @@ function NftHistory({ history, creator, mktAddress, owner, isAuction, creatorNam
                                             </div>
                                             <div className='ms-3'>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    Transferred to
+                                                Transféré à
                                                     <Link className='text-reset' to={`/users/${el.to.account}`}>
                                                         <strong className='ms-2 text-dark'>
-                                                            {el.to.name === '' ? 'Adi Gallia' : el.to.name}
+                                                            {el.to.name === '' ? 'MetaMusik' : el.to.name}
                                                         </strong>
                                                     </Link>
                                                 </p>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    at
+                                                    à
                                                     <strong className='ms-2 fw-normal text-dark text-xs'>
                                                         {formteFullDate(el.time)}
                                                     </strong>
@@ -145,15 +145,15 @@ function NftHistory({ history, creator, mktAddress, owner, isAuction, creatorNam
                                             </div>
                                             <div className='ms-3'>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    Transferred to
+                                                Transféré à
                                                     <Link className='text-reset' to={`/users/${el.to.account}`}>
                                                         <strong className='ms-2 text-dark'>
-                                                            {el.to.name === '' ? 'Adi Gallia' : el.to.name}
+                                                            {el.to.name === '' ? 'MetaMusik' : el.to.name}
                                                         </strong>
                                                     </Link>
                                                 </p>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    at
+                                                    à
                                                     <strong className='ms-2 fw-normal text-dark text-xs'>
                                                         {formteFullDate(el.time)}
                                                     </strong>
@@ -179,15 +179,15 @@ function NftHistory({ history, creator, mktAddress, owner, isAuction, creatorNam
                                             </div>
                                             <div className='ms-3'>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    Transferred to
+                                                Transféré à
                                                     <Link className='text-reset' to={`/users/${el.to.account}`}>
                                                         <strong className='ms-2 text-dark'>
-                                                            {el.to.name === '' ? 'Adi Gallia' : el.to.name}
+                                                            {el.to.name === '' ? 'MetaMusik' : el.to.name}
                                                         </strong>
                                                     </Link>
                                                 </p>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    at
+                                                    à
                                                     <strong className='ms-2 fw-normal text-dark text-xs'>
                                                         {formteFullDate(el.time)}
                                                     </strong>
@@ -211,13 +211,13 @@ function NftHistory({ history, creator, mktAddress, owner, isAuction, creatorNam
                                             </div>
                                             <div className='ms-3'>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    Transferred to
+                                                Transféré à
                                                     <Link className='text-reset' to='/'>
-                                                        <strong className='ms-2 text-dark'>Marketplace</strong>
+                                                        <strong className='ms-2 text-dark'>Marché</strong>
                                                     </Link>
                                                 </p>
                                                 <p className='mb-0 text-sm text-muted'>
-                                                    at
+                                                    à
                                                     <strong className='ms-2 fw-normal text-dark text-xs'>
                                                         {formteFullDate(el.time)}
                                                     </strong>
@@ -246,15 +246,15 @@ function NftHistory({ history, creator, mktAddress, owner, isAuction, creatorNam
                                                 </div>
                                                 <div className='ms-3'>
                                                     <p className='mb-0 text-sm text-muted'>
-                                                        Transferred to
+                                                    Transféré à
                                                         <Link className='text-reset' to={`/users/${el.to.account}`}>
                                                             <strong className='ms-2 text-dark'>
-                                                                {el.to.name === '' ? 'Adi Gallia' : el.to.name}
+                                                                {el.to.name === '' ? 'MetaMusik' : el.to.name}
                                                             </strong>
                                                         </Link>
                                                     </p>
                                                     <p className='mb-0 text-sm text-muted'>
-                                                        at
+                                                        à
                                                         <strong className='ms-2 fw-normal text-dark text-xs'>
                                                             {formteFullDate(el.time)}
                                                         </strong>

@@ -107,7 +107,7 @@ function InfoForm({ editInfo }) {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className='row gy-4'>
                     <div className='col-lg-6'>
-                        <label className='form-label'>Full Name</label>
+                        <label className='form-label'>Nom complet</label>
                         <input
                             type='text'
                             className={`${errors.fullName ? 'is-invalid' : null} form-control bg-white`}
@@ -120,10 +120,10 @@ function InfoForm({ editInfo }) {
                                 maxLength: 20,
                             })}
                         />
-                        {errors.fullName && <span className='invalid-feedback'>Please enter your full name</span>}
+                        {errors.fullName && <span className='invalid-feedback'>Veuillez saisir votre nom complet</span>}
                     </div>
                     <div className='col-lg-6'>
-                        <label className='form-label'>Email Address</label>
+                        <label className='form-label'>Adresse électronique</label>
                         <input
                             type='email'
                             className={`${errors.email ? 'is-invalid' : null} form-control bg-white`}
@@ -143,7 +143,7 @@ function InfoForm({ editInfo }) {
                         />
                     </div>
                     <div className='col-lg-6'>
-                        <label className='form-label fw-bold text-dark'>Avatar URL</label>
+                        <label className='form-label fw-bold text-dark'>URL de l'avatar</label>
                         <input
                             type='text'
                             className={`${errors.avatar ? 'is-invalid' : null} form-control bg-white`}
@@ -156,10 +156,10 @@ function InfoForm({ editInfo }) {
                                 },
                             })}
                         />
-                        {errors.avatar && <span className='invalid-feedback'>Please enter a valid URL</span>}
+                        {errors.avatar && <span className='invalid-feedback'>Veuillez saisir une URL valide</span>}
                     </div>
                     <div className='col-lg-6'>
-                        <label className='form-label fw-bold text-dark'>Header URL</label>
+                        <label className='form-label fw-bold text-dark'>URL de l'en-tête</label>
                         <input
                             type='text'
                             className={`${errors.header ? 'is-invalid' : null} form-control bg-white`}
@@ -172,10 +172,10 @@ function InfoForm({ editInfo }) {
                                 },
                             })}
                         />
-                        {errors.header && <span className='invalid-feedback'>Please enter a valid URL</span>}
+                        {errors.header && <span className='invalid-feedback'>Veuillez saisir une URL valide</span>}
                     </div>
                     <div className='col-lg-12'>
-                        <label className='form-label'>About</label>
+                        <label className='form-label'>A propos de</label>
                         <textarea
                             className={`${errors.about ? 'is-invalid' : null} form-control bg-white`}
                             rows='7'
@@ -185,7 +185,7 @@ function InfoForm({ editInfo }) {
                         ></textarea>
                     </div>
                     <div className='col-lg-6'>
-                        <label className='form-label fw-bold text-dark'>Facebook URL</label>
+                        <label className='form-label fw-bold text-dark'>URL de Facebook</label>
                         <input
                             type='text'
                             className={`${errors.facebook ? 'is-invalid' : null} form-control bg-white`}
@@ -198,10 +198,10 @@ function InfoForm({ editInfo }) {
                                 },
                             })}
                         />
-                        {errors.facebook && <span className='invalid-feedback'>Please enter a valid URL</span>}
+                        {errors.facebook && <span className='invalid-feedback'>Veuillez saisir une URL valide</span>}
                     </div>
                     <div className='col-lg-6'>
-                        <label className='form-label fw-bold text-dark'>Twitter URL</label>
+                        <label className='form-label fw-bold text-dark'>URL de Twitter</label>
                         <input
                             type='text'
                             className={`${errors.twitter ? 'is-invalid' : null} form-control bg-white`}
@@ -214,10 +214,10 @@ function InfoForm({ editInfo }) {
                                 },
                             })}
                         />
-                        {errors.twitter && <span className='invalid-feedback'>Please enter a valid URL</span>}
+                        {errors.twitter && <span className='invalid-feedback'>Veuillez saisir une URL valide</span>}
                     </div>
                     <div className='col-lg-6'>
-                        <label className='form-label fw-bold text-dark'>Instagram URL</label>
+                        <label className='form-label fw-bold text-dark'>URL d'Instagram</label>
                         <input
                             type='text'
                             className={`${errors.instagram ? 'is-invalid' : null} form-control bg-white`}
@@ -230,10 +230,10 @@ function InfoForm({ editInfo }) {
                                 },
                             })}
                         />
-                        {errors.instagram && <span className='invalid-feedback'>Please enter a valid URL</span>}
+                        {errors.instagram && <span className='invalid-feedback'>Veuillez saisir une URL valide</span>}
                     </div>
                     <div className='col-lg-6'>
-                        <label className='form-label fw-bold text-dark'>Dribbble URL</label>
+                        <label className='form-label fw-bold text-dark'>URL de Dribbble</label>
                         <input
                             type='text'
                             className={`${errors.dribbble ? 'is-invalid' : null} form-control bg-white`}
@@ -246,16 +246,16 @@ function InfoForm({ editInfo }) {
                                 },
                             })}
                         />
-                        {errors.dribbble && <span className='invalid-feedback'>Please enter a valid URL</span>}
+                        {errors.dribbble && <span className='invalid-feedback'>Veuillez saisir une URL valide</span>}
                     </div>
                     <div className='col-6'>
                         <button className='btn btn-primary w-100 py-2' type='submit'>
-                            Update Info
+                        Mise à jour des informations
                         </button>
                     </div>
                     <div className='col-6'>
                         <button className='btn btn-dark w-100 py-2' type='button' onClick={editInfo}>
-                            Cancel
+                        Annuler
                         </button>
                     </div>
                 </div>

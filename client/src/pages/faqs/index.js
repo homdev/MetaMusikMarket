@@ -17,7 +17,7 @@ function FAQsPage() {
 
     return (
         <>
-            <PgaeBanner heading='Frequently Asked Questions' />
+            <PgaeBanner heading='Foire aux questions' />
 
             <section className='py-5'>
                 <div className='container py-5'>
@@ -25,7 +25,7 @@ function FAQsPage() {
                         <div className='col-lg-8 order-2 order-lg-1'>
                             {tab === 'tech-questions' && (
                                 <>
-                                    <h2 className='mb-4'>Technical Questions</h2>
+                                    <h2 className='mb-4'>Questions techniques</h2>
                                     <div className='accordion' id='accordionExample'>
                                         {techQuestions.map((el, index) => {
                                             return (
@@ -177,7 +177,7 @@ function FAQsPage() {
                         </div>
 
                         <div className='col-lg-4 order-1 order-lg-2'>
-                            <h2 className='mb-4'>Quick Nav</h2>
+                            <h2 className='mb-4'>Navigation rapide</h2>
 
                             <div className='card bg-light shadow-0'>
                                 <div className='card-body p-4 p-lg-5'>
@@ -189,7 +189,7 @@ function FAQsPage() {
                                                 }`}
                                                 onClick={() => setTab('tech-questions')}
                                             >
-                                                Technical Questions
+                                                Questions techniques
                                             </button>
                                         </li>
                                         <li className='mb-3'>
@@ -199,7 +199,7 @@ function FAQsPage() {
                                                 }`}
                                                 onClick={() => setTab('purchase')}
                                             >
-                                                Purchase
+                                                Achat
                                             </button>
                                         </li>
                                         <li className='mb-3'>
@@ -209,7 +209,7 @@ function FAQsPage() {
                                                 }`}
                                                 onClick={() => setTab('license')}
                                             >
-                                                License &amp; Pricing
+                                                License &amp; Tarification
                                             </button>
                                         </li>
                                         <li className='mb-3'>
@@ -219,7 +219,7 @@ function FAQsPage() {
                                                 }`}
                                                 onClick={() => setTab('support')}
                                             >
-                                                Customer Support
+                                                Soutien à la clientèle
                                             </button>
                                         </li>
                                     </ul>

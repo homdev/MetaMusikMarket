@@ -65,11 +65,11 @@ function NoContractAlert() {
                 <img src='/images/metamask.png' alt='metamask' className='flex-shrink-0 mb-4' width='65' />
                 <div>
                     <h5 className='mb-1'>
-                        Switch Network to <span className='text-primary'>{settings.UISettings.usedNetworkName}</span>
+                    Basculer le réseau vers <span className='text-primary'>{settings.UISettings.usedNetworkName}</span>
                     </h5>
-                    <p className='text-muted mb-4'>Please click the button below in order to see the app content.</p>
+                    <p className='text-muted mb-4'>Veuillez cliquer sur le bouton ci-dessous pour voir le contenu de l'application.</p>
                     <button className='btn btn-primary' onClick={() => handleNetworkSwitch(`bsctest`)}>
-                        Switch network
+                    Réseau de commutation
                     </button>
                 </div>
             </div>

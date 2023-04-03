@@ -1,14 +1,14 @@
 export const settings = {
     UISettings: {
-        logo: '/images/logo3.png', // Logo of the dark version
-        logoLight: '/images/logo3.png', // Logo of the light version
-        marketplaceBrandName: 'MetaRealFights| NFT Marketplace',
-        marketplaceBrandDescription: 'MetaRealFights NFT Marketplace',
-        marketplaceAuthor: 'MetaRealFights | BlockConceptor',
+        logo: '/images/logo-dark.png', // Logo of the dark version
+        logoLight: '/images/logo-light.png', // Logo of the light version
+        marketplaceBrandName: 'metamusik| NFT Marketplace',
+        marketplaceBrandDescription: 'metamusik NFT Marketplace',
+        marketplaceAuthor: 'metamusik | BlockConceptor',
         contactFormAddressId: 'xyyodedw',
         newsletterAddressId: 'xlezgplp',
         usedNetworkName: 'Ganach Local Server',
-        heroImages: ['/cube-4.png', '/cube-3.png', '/cube-2.png'],
+        heroImages: ['/cube-2.png', '/cube-2.png', '/cube-2.png'],
     },
     currency: 'ETH',
     IPFSProjectID: '2N5jbKYA25zK3BaIaCuCfBibmJF',
@@ -18,7 +18,7 @@ export const settings = {
     blockExplorerUrls: 'https://alfajores-blockscout.celo-testnet.org/',
     NFTmaxSize: 10240, // 1MB
     maxFeaturedItems: 10,
-    IPFSGateway: 'metarealfights',
+    IPFSGateway: 'metamusik',
     royalties: [
         { label: 'None', value: 0 },
         { label: '5%', value: 5 },

@@ -19,10 +19,10 @@ function NotFound() {
                     <p className='mb-0 fw-bold' style={{ fontSize: '10rem' }}>
                         404
                     </p>
-                    <h1 className='h2 text-uppercase'>Not Found</h1>
-                    <p className='text-muted'>This page is not found, return to Home page</p>
+                    <h1 className='h2 text-uppercase'>Non trouvé</h1>
+                    <p className='text-muted'>Cette page n'a pas été trouvée, retournez à la page d'accueil</p>
                     <Link to='/' className='btn btn-gradient-primary'>
-                        Homepage
+                    Page d'accueil
                     </Link>
                 </div>
             </div>

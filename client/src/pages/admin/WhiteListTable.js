@@ -40,7 +40,7 @@ function UsersTable() {
     /*** ------------------------------------------ */
     const columns = [
         {
-            name: 'User Info',
+            name: "Informations sur l'utilisateur",
             selector: (row) => row.fullName,
             cell: (row) => (
                 <div row={row}>

@@ -68,9 +68,9 @@ function NoMetaMaskAlert() {
                             alt={settings.UISettings.marketplaceBrandName}
                             width='150'
                         />
-                        <h2 className='fw-light mb-3'>We've noticed that you don't have MetaMask installed</h2>
+                        <h2 className='fw-light mb-3'>Nous avons remarqué que MetaMask n'est pas installé sur votre ordinateur.</h2>
                         <p className='lead text-muted mb-3'>
-                            You didn't break the internet, install MetaMask and every this will work just fine.
+                            Vous n'avez pas cassé internet, installez MetaMask et tout fonctionnera très bien.
                         </p>
                         <ul className='list-inline mb-4'>
                             {webExtension.map((extension, index) => {
@@ -88,7 +88,7 @@ function NoMetaMaskAlert() {
                                                 width='40'
                                                 className='mb-3'
                                             />
-                                            <p>Download for {extension.name}</p>
+                                            <p>Télécharger pour {extension.name}</p>
                                         </a>
                                     </li>
                                 );
@@ -98,7 +98,7 @@ function NoMetaMaskAlert() {
                         <div className='d-inline-block'>
                             <p className='text-muted py-2 px-3 bg-light rounded mb-0 d-flex align-items-center justify-content-center'>
                                 <i className='las la-info-circle me-2 text-primary'></i>
-                                Please consider reloading this window after installing the extension.
+                                Pensez à recharger cette fenêtre après avoir installé l'extension.
                             </p>
                         </div>
                     </div>

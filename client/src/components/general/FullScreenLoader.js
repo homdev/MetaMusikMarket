@@ -44,7 +44,7 @@ function FullScreenLoader({ heading }) {
                         </div>
                         <div className='ms-1'>
                             <p className='h3 text-uppercase mb-2'>{heading}</p>
-                            <p className='text-muted mb-0'>Make sure MetaMask is connected</p>
+                            <p className='text-muted mb-0'>S'assurer que le MetaMask est connecté</p>
                         </div>
                     </div>
                 </div>

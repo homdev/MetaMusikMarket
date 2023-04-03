@@ -120,7 +120,7 @@ function TransactionsTable() {
                                         }}
                                     ></span>
                                 </div>
-                                <p className='ms-2 mb-0 fw-bold'>Marketplace</p>
+                                <p className='ms-2 mb-0 fw-bold'>Marché</p>
                             </div>
                         </Link>
                     ) : (
@@ -159,7 +159,7 @@ function TransactionsTable() {
                                         }}
                                     ></span>
                                 </div>
-                                <p className='ms-2 mb-0 fw-bold'>Marketplace</p>
+                                <p className='ms-2 mb-0 fw-bold'>Marché</p>
                             </div>
                         </Link>
                     ) : (

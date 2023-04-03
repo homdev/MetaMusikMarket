@@ -14,12 +14,12 @@ function AdminPage() {
     //      CHANGE PAGE TITLE
     /*** ---------------------------------------------- */
     useEffect(() => {
-        document.title = `Admin Panel | ${settings.UISettings.marketplaceBrandName}`;
+        document.title = `Panneau d'administration | ${settings.UISettings.marketplaceBrandName}`;
     }, []);
 
     return (
         <>
-            <PageBanner heading='Admin Panel' bannerBg='bg-light pb-0' />
+            <PageBanner heading="Panneau d'administration" bannerBg='bg-light pb-0' />
             <section className='py-5 bg-light'>
                 <div className='container pb-5'>
                     <div className='row mb-5 pb-5'>
@@ -32,7 +32,7 @@ function AdminPage() {
                                     type='button'
                                     onClick={() => setIsNavSelected('dashboard')}
                                 >
-                                    Dashboard
+                                    Tableau de bord
                                 </button>
                                 <button
                                     className={`toggle-nav-btn flex-fill w-100 ${
@@ -41,7 +41,7 @@ function AdminPage() {
                                     type='button'
                                     onClick={() => setIsNavSelected('whitelist')}
                                 >
-                                    WhiteList
+                                    Liste blanche
                                 </button>
                                 <button
                                     className={`toggle-nav-btn flex-fill w-100 ${
@@ -50,7 +50,7 @@ function AdminPage() {
                                     type='button'
                                     onClick={() => setIsNavSelected('promotion')}
                                 >
-                                    Promote NFT
+                                    Promouvoir le NFT
                                 </button>
                             </div>
                         </div>

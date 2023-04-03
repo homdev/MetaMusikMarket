@@ -154,7 +154,7 @@ function WhiteList() {
                 <div className='col-lg-6 z-index-40' data-aos='fade-right' data-aos-delay='100'>
                     <div className='card shadow-0 p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>Add to WhiteList</h5>
+                            <h5 className='mb-4'>Ajouter à la liste blanche</h5>
 
                             <form onSubmit={addToWhiteListHandler}>
                                 {usersList && (
@@ -170,7 +170,7 @@ function WhiteList() {
                                         />
 
                                         <button className='btn btn-primary w-100 mt-3' type='submit'>
-                                            Add to WhiteList
+                                        Ajouter à la liste blanche
                                         </button>
                                     </>
                                 )}
@@ -182,7 +182,7 @@ function WhiteList() {
                 <div className='col-lg-6 z-index-30' data-aos='fade-left' data-aos-delay='200'>
                     <div className='card shadow-0 p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>Remove from WhiteList</h5>
+                            <h5 className='mb-4'>Supprimer de la liste blanche</h5>
 
                             <form onSubmit={removeFromWhiteListHandler}>
                                 {whiteList && (
@@ -198,7 +198,7 @@ function WhiteList() {
                                         />
 
                                         <button className='btn btn-primary w-100 mt-3' type='submit'>
-                                            Remove from WhiteList
+                                            Supprimer de la liste blanche
                                         </button>
                                     </>
                                 )}
@@ -210,7 +210,7 @@ function WhiteList() {
                 <div className='col-lg-12 z-index-20' data-aos='fade-up' data-aos-delay='300'>
                     <div className='card shadow-0 p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>WhiteList Users</h5>
+                            <h5 className='mb-4'>Utilisateurs de la liste blanche</h5>
                             <WhiteListTable />
                         </div>
                     </div>

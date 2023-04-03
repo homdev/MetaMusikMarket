@@ -47,10 +47,10 @@ function HomePage({ topSellers }) {
                         <div className='row'>
                             <div className='col-lg-6 mx-auto text-center'>
                                 <h2 data-aos='fade-up' data-aos-delay='100'>
-                                    Featured this Month
+                                    À l'affiche ce mois-ci
                                 </h2>
                                 <p className='text-muted lead mb-0' data-aos='fade-up' data-aos-delay='200'>
-                                    We're excited to share our ten favorite non-fungible tokens this month!
+                                    Nous sommes ravis de partager nos dix jetons non fongibles préférés ce mois-ci !
                                 </p>
                             </div>
                         </div>
@@ -59,8 +59,8 @@ function HomePage({ topSellers }) {
                     {collectionCtx.totalSupply === '0' && !collectionCtx.nftIsLoading ? (
                         <div className='col-lg-9 mx-auto'>
                             <NoDataAlert
-                                heading="There're no NFTs at the moment."
-                                subheading='Try to mint some assets to see how are we rendering them.'
+                                heading="Il n'y a pas de NFT pour le moment."
+                                subheading='Essayez de monnayer certains actifs pour voir comment nous les rendons.'
                                 customClass='justify-content-center'
                                 aos='fade-up'
                                 aosDelay='300'
@@ -106,10 +106,10 @@ function HomePage({ topSellers }) {
                         <div className='row'>
                             <div className='col-lg-6'>
                                 <h2 data-aos='fade-up' data-aos-delay='100'>
-                                    Categories
+                                    Catégories
                                 </h2>
                                 <p className='text-muted lead mb-0' data-aos='fade-up' data-aos-delay='200'>
-                                    Browse what's trending or find the rarest NFTs by category.
+                                    Parcourez les tendances ou trouvez les NFT les plus rares par catégorie.
                                 </p>
                             </div>
                         </div>
@@ -149,11 +149,10 @@ function HomePage({ topSellers }) {
                         <div className='row'>
                             <div className='col-lg-6 mx-auto text-center'>
                                 <h2 data-aos='fade-up' data-aos-delay='100'>
-                                    Latest NFTs
+                                    Nouveauté
                                 </h2>
                                 <p className='text-muted lead mb-0' data-aos='fade-up' data-aos-delay='200'>
-                                    You're in for a treat. There are a bunch of new NFTs that you might like. Check them
-                                    out!
+                                    Découvrez les derniers NFTs ajoutés sur la plateforme.
                                 </p>
                             </div>
                         </div>
@@ -162,8 +161,8 @@ function HomePage({ topSellers }) {
                     {collectionCtx.totalSupply === '0' && !collectionCtx.nftIsLoading ? (
                         <div className='col-lg-9 mx-auto'>
                             <NoDataAlert
-                                heading="There're no NFTs at the moment."
-                                subheading='Try to mint some assets to see how are we rendering them.'
+                                heading="Il n'y a pas de NFT pour le moment."
+                                subheading='Essayez de monnayer certains actifs pour voir comment nous les rendons.'
                                 customClass='justify-content-center'
                                 aos='fade-up'
                                 aosDelay='300'
@@ -207,8 +206,8 @@ function HomePage({ topSellers }) {
 
             <TopSellers
                 topSellers={topSellers}
-                title='Top Sellers'
-                description='Bestselling NFT authors on our marketplace.'
+                title='Meilleurs vendeurs'
+                description='Les auteurs NFT les plus vendus sur notre place de marché.'
             />
 
             <section className='py-5 bg-light'>
@@ -216,11 +215,10 @@ function HomePage({ topSellers }) {
                     <div className='row gy-5 align-items-center'>
                         <div className='col-lg-6'>
                             <h2 data-aos='fade-right' data-aos-delay='100'>
-                                How it works
+                                Comment cela fonctionne-t-il ?
                             </h2>
                             <p className='text-muted lead mb-4' data-aos='fade-up' data-aos-delay='200'>
-                                Feel free to sign up and dive in if you want to get into the nuance of minting, buying,
-                                or selling NFTs.
+                                Vous pouvez acheter, vendre et échanger des NFTs sur la plateforme.
                             </p>
 
                             <div className='d-flex mb-4' data-aos='fade-right' data-aos-delay='150'>
@@ -228,10 +226,9 @@ function HomePage({ topSellers }) {
                                     <i className='las la-wallet text-white'></i>
                                 </div>
                                 <div className='ms-3'>
-                                    <h5>Connect your wallet</h5>
+                                    <h5>Connectez votre portefeuille</h5>
                                     <p className='text-muted text-sm mb-0'>
-                                        MetaMask is an easy-to-use browser extension that allows you to interface with
-                                        Ethereum applications like MetaRealFights.
+                                        MetaMask est une extension de navigateur facile à utiliser qui vous permet de vous interfacer avec des applications Ethereum comme Metamusik.
                                     </p>
                                 </div>
                             </div>
@@ -240,11 +237,11 @@ function HomePage({ topSellers }) {
                                     <i className='las la-rocket text-white'></i>
                                 </div>
                                 <div className='ms-3'>
-                                    <h5>Mint & Buy and Sell NFTs</h5>
+                                    <h5>Monnaie et achat et vente de NFT</h5>
                                     <p className='text-muted text-sm mb-2'>
-                                        NFTs can represent anything from art to music to collectibles and more. NFTs
-                                        allow you to own digital items in the same way that you would own physical
-                                        items, like trading cards or stamps.
+                                    Les NFT peuvent représenter n'importe quoi, de l'art à la musique en passant par les objets de collection et bien d'autres choses encore. Les NFT
+                                    vous permettent de posséder des objets numériques de la même manière que des objets
+                                    physiques, comme des cartes à collectionner ou des timbres.
                                     </p>
                                 </div>
                             </div>
@@ -253,10 +250,10 @@ function HomePage({ topSellers }) {
                                     <i className='lab la-ethereum text-white'></i>
                                 </div>
                                 <div className='ms-3'>
-                                    <h5>Purchase & Transfer</h5>
+                                    <h5>Achat et transfert</h5>
                                     <p className='text-muted text-sm mb-0'>
-                                        When buyers purchase the NFT token, it gets automatically transferred to them by
-                                        the marketplace.
+                                    Lorsque les acheteurs achètent le jeton NFT, celui-ci leur est automatiquement transféré par la place de marché.
+                                    la place de marché.
                                     </p>
                                 </div>
                             </div>
@@ -275,10 +272,10 @@ function HomePage({ topSellers }) {
                         <div className='row'>
                             <div className='col-lg-6 mx-auto text-center'>
                                 <h2 data-aos='fade-up' data-aos-delay='100'>
-                                    Recent Auctions
+                                    Enchères récentes
                                 </h2>
                                 <p className='text-muted lead mb-0' data-aos='fade-up' data-aos-delay='200'>
-                                    Get this rare limited edition collectible before someone else does!
+                                    Obtenez cette rare édition limitée avant que quelqu'un d'autre ne le fasse !
                                 </p>
                             </div>
                         </div>
@@ -288,8 +285,8 @@ function HomePage({ topSellers }) {
                     !collectionCtx.nftIsLoading ? (
                         <div className='col-lg-9 mx-auto'>
                             <NoDataAlert
-                                heading="There're no Auctions at the moment."
-                                subheading='Once someone has created an auction, you should find it here.'
+                                heading="Il n'y a pas d'enchères en ce moment."
+                                subheading="Une fois que quelqu'un a créé une enchère, vous devriez la trouver ici."
                                 customClass='justify-content-center'
                                 aos='fade-up'
                                 aosDelay='300'

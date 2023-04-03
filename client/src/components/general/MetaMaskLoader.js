@@ -36,13 +36,13 @@ function MetaMaskLoader() {
         >
             <div></div>
             <div className='text-center w-100 p-4'>
-                <p className='h1 fw-light mb-0'>This Normally Takes some Time</p>
-                <p className='h3 fw-light'>Don't reload your browser</p>
+                <p className='h1 fw-light mb-0'>Cela prend normalement un peu de temps</p>
+                <p className='h3 fw-light'>Ne rechargez pas votre navigateur</p>
             </div>
             <div className='d-flex align-items-center justify-content-center p-5'>
                 <img src='/images/metamask.png' alt='MetaMask' width='40' />
                 <div className='ms-3'>
-                    <p className='h6 mb-2'>Processing Transaction</p>
+                    <p className='h6 mb-2'>Traitement des transactions</p>
                     <div className='cloud m-0'></div>
                 </div>
             </div>

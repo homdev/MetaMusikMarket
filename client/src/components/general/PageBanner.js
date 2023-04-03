@@ -14,7 +14,7 @@ function PageBanner({ heading, bannerBg }) {
                         <li className='breadcrumb-item'>
                             <Link className='text-decoration-none d-flex align-items-center' to='/'>
                                 {' '}
-                                <i className='las la-home la-sm me-1'></i>Home
+                                <i className='las la-home la-sm me-1'></i>Accueil
                             </Link>
                         </li>
                         <li className='breadcrumb-item active' aria-current='page'>

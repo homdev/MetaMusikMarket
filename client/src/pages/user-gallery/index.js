@@ -123,10 +123,10 @@ function UserGalleryPage({ topSellers }) {
                         <p className='mb-0 fw-bold' style={{ fontSize: '10rem' }}>
                             404
                         </p>
-                        <h1 className='h2 text-uppercase'>Not Found</h1>
-                        <p className='text-muted'>This page is not found, return to Home page</p>
+                        <h1 className='h2 text-uppercase'>Non trouvé</h1>
+                        <p className='text-muted'>Cette page n'a pas été trouvée, retournez à la page d'accueil</p>
                         <Link to='/' className='btn btn-gradient-primary'>
-                            Homepage
+                        Page d'accueil
                         </Link>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ function UserGalleryPage({ topSellers }) {
                             {isTopSeller && (
                                 <span className='bg-primary badge mb-0 ms-2 text-xxs'>
                                     <i className='las la-trophy me-1 text-xxs'></i>
-                                    Top Seller
+                                    Meilleur vendeur
                                 </span>
                             )}
                         </h1>
@@ -236,7 +236,7 @@ function UserGalleryPage({ topSellers }) {
                                         }`}
                                         onClick={() => setIsNavSelected('created')}
                                     >
-                                        Created
+                                        Créée
                                     </button>
                                     <button
                                         className={`toggle-nav-btn flex-fill ${
@@ -244,7 +244,7 @@ function UserGalleryPage({ topSellers }) {
                                         }`}
                                         onClick={() => setIsNavSelected('collected')}
                                     >
-                                        Owned
+                                        Propriétaire
                                     </button>
                                 </div>
                             </div>
@@ -260,7 +260,7 @@ function UserGalleryPage({ topSellers }) {
                                 <>
                                     <div className='row mb-4'>
                                         <div className='col-lg-7'>
-                                            <h2>NFTs created by {userDetails.fullName}</h2>
+                                            <h2>NFT créés par {userDetails.fullName}</h2>
                                             <p className='lead text-muted'>
                                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                             </p>
@@ -300,7 +300,7 @@ function UserGalleryPage({ topSellers }) {
 
                                         {collectionCtx.collection.filter((asset) =>
                                             createdAssets.some((item) => asset.id === parseInt(item))
-                                        ).length === 0 && <h4>{userDetails.fullName} Hasn't created any NFTs</h4>}
+                                        ).length === 0 && <h4>{userDetails.fullName} n'a pas créé de NFT</h4>}
                                     </div>
                                 </>
                             )}
@@ -313,7 +313,7 @@ function UserGalleryPage({ topSellers }) {
                                 <>
                                     <div className='row mb-4'>
                                         <div className='col-lg-7'>
-                                            <h2>NFTs owned by {userDetails.fullName}</h2>
+                                            <h2>NFT détenus par {userDetails.fullName}</h2>
                                             <p className='lead text-muted'>
                                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                             </p>
@@ -344,7 +344,7 @@ function UserGalleryPage({ topSellers }) {
                                         {collectionCtx.collection.filter((asset) => asset.user === address).length +
                                             collectionCtx.collection.filter((asset) => asset.owner === address)
                                                 .length ===
-                                            0 && <h4>{userDetails.fullName} doen't own any NFTs</h4>}
+                                            0 && <h4>{userDetails.fullName} ne possède pas de NFT</h4>}
                                     </div>
                                 </>
                             )}

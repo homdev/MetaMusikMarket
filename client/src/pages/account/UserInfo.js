@@ -19,18 +19,18 @@ function UserInfo({ editInfo }) {
     return (
         <>
             <h2 className='h3 mb-4 text-center' data-aos='fade-up' data-aos-delay='100'>
-                Basic Information
+            Informations de base
             </h2>
             <div className='row g-3 mb-5' data-aos='fade-up' data-aos-delay='200'>
                 <div className='col-lg-6' data-aos='fade' data-aos-delay='100'>
                     <div className='p-4 bg-light rounded-lg'>
-                        <h6>Full Name</h6>
+                        <h6>Nom complet</h6>
                         <p className='text-muted mb-0'>{userInfo ? userInfo.fullName : 'Loading...'}</p>
                     </div>
                 </div>
                 <div className='col-lg-6' data-aos='fade' data-aos-delay='200'>
                     <div className='p-4 bg-light rounded-lg'>
-                        <h6>Email Address</h6>
+                        <h6>Adresse électronique</h6>
                         <p className='text-muted mb-0'>
                             {userInfo && userInfo.email !== '' ? userInfo.email : 'Not Set'}
                         </p>
@@ -61,7 +61,7 @@ function UserInfo({ editInfo }) {
                 </div>
                 <div className='col-lg-12' data-aos='fade' data-aos-delay='500'>
                     <div className='p-4 bg-light rounded-lg'>
-                        <h6>About</h6>
+                        <h6>A propos de</h6>
                         <p className='text-muted mb-0'>
                             {userInfo && userInfo.about !== '' ? userInfo.about : 'Not Set'}
                         </p>
@@ -70,7 +70,7 @@ function UserInfo({ editInfo }) {
 
                 <div className='col-lg-12' data-aos='fade' data-aos-delay='600'>
                     <div className='p-4 bg-light rounded-lg'>
-                        <h6>Header</h6>
+                        <h6>En-tête</h6>
                         <div className='user-gallery-header rounded-lg'>
                             <div
                                 className='user-gallery-header-inner rounded-lg'
@@ -82,7 +82,7 @@ function UserInfo({ editInfo }) {
             </div>
 
             <h2 className='h3 mb-4 text-center' data-aos='fade-up' data-aos-delay='100'>
-                Social Links
+                Liens des réseaux sociaux
             </h2>
             <div className='row g-3 mb-4' data-aos='fade-up' data-aos-delay='200'>
                 <div className='col-lg-6'>
@@ -93,7 +93,7 @@ function UserInfo({ editInfo }) {
                                 {userInfo && userInfo.facebook}
                             </a>
                         ) : (
-                            <p className='text-muted mb-0'>Not Set</p>
+                            <p className='text-muted mb-0'>Non défini</p>
                         )}
                     </div>
                 </div>
@@ -105,7 +105,7 @@ function UserInfo({ editInfo }) {
                                 {userInfo && userInfo.twitter}
                             </a>
                         ) : (
-                            <p className='text-muted mb-0'>Not Set</p>
+                            <p className='text-muted mb-0'>Non défini</p>
                         )}
                     </div>
                 </div>
@@ -117,7 +117,7 @@ function UserInfo({ editInfo }) {
                                 {userInfo && userInfo.instagram}
                             </a>
                         ) : (
-                            <p className='text-muted mb-0'>Not Set</p>
+                            <p className='text-muted mb-0'>Non défini</p>
                         )}
                     </div>
                 </div>
@@ -129,7 +129,7 @@ function UserInfo({ editInfo }) {
                                 {userInfo && userInfo.dribbble}
                             </a>
                         ) : (
-                            <p className='text-muted mb-0'>Not Set</p>
+                            <p className='text-muted mb-0'>Non défini</p>
                         )}
                     </div>
                 </div>
@@ -142,7 +142,7 @@ function UserInfo({ editInfo }) {
                 onClick={editInfo}
             >
                 <i className='las la-user me-2'></i>
-                Update your Information
+                Mise à jour de vos informations
             </button>
         </>
     );

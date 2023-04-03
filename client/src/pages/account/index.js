@@ -48,7 +48,7 @@ function AccountPage() {
             {auctionCtx.fetchingLoading ? <FullScreenLoader heading='Updating your Bids' /> : null}
             {marketplaceCtx.mktIsLoading ? <FullScreenLoader heading='loading' /> : null}
             {auctionCtx.auctionTransactionLoading ? <MetaMaskLoader /> : null}
-            <PageBanner heading='My Account' />
+            <PageBanner heading='Mon compte' />
             <section className='py-5'>
                 <div className='container py-5'>
                     <div className='row'>

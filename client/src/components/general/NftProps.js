@@ -11,7 +11,7 @@ function NftProps({ nftProperties }) {
             <div className='col-xl-8'>
                 <div className='row gy-3'>
                     <div className='col-12'>
-                        <h6 className='mb-1'>Properties</h6>
+                        <h6 className='mb-1'>Propriétés</h6>
                     </div>
                     {nftProperties.length > 0 ? (
                         nftProperties
@@ -38,7 +38,7 @@ function NftProps({ nftProperties }) {
                         <div className='d-inline-block'>
                             <p className='text-muted mb-0 d-flex align-items-center bg-gray-200 rounded py-2 px-3'>
                                 <i className='las la-folder text-dark me-2'></i>
-                                There're no custom properties provided
+                                Il n'y a pas de propriétés personnalisées fournies
                             </p>
                         </div>
                     )}

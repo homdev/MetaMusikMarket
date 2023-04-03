@@ -32,8 +32,8 @@ function ItemPreview({ heading, preview, title, category, author, royalties, typ
                         >
                             {type === 'image' ? (
                                 <img
-                                    className='img-fluid rounded w-100'
-                                    src={type === 'image' && (!preview ? '/images/asset-1.png' : preview)}
+                                    className='img-fluid rounded w-75'
+                                    src={type === 'image' && (!preview ? '/images/asset-2.png' : preview)}
                                     alt={title}
                                 />
                             ) : type === 'audio' ? (
@@ -47,7 +47,7 @@ function ItemPreview({ heading, preview, title, category, author, royalties, typ
                                 </>
                             ) : (
                                 <ReactPlayer
-                                    url={type === 'video' && (!preview ? '/ue5.mp4' : preview)}
+                                    url={type === 'video' && (!preview ? '/teaser.mp4' : preview)}
                                     controls={true}
                                     width='100%'
                                     height='auto'
@@ -74,16 +74,16 @@ function ItemPreview({ heading, preview, title, category, author, royalties, typ
                             </div>
                             <div className='ms-2'>
                                 <p className='text-muted fw-normal mb-0 lh-1'>
-                                    <span className='text-xs'>Owned By</span>
+                                    <span className='text-xs'>Détenu par</span>
                                     <strong className='d-block fw-bold h6 text-dark mb-0'>
-                                        {truncateStart('Adi Gallia', 10)}
+                                        {truncateStart('MetaMusik', 10)}
                                     </strong>
                                 </p>
                             </div>
                         </div>
 
                         <p className='text-muted fw-normal mb-0 lh-1'>
-                            <span className='text-xs'>Current Price</span>
+                            <span className='text-xs'>Prix actuel</span>
                             <strong className='d-block fw-bold h6 text-dark mb-0'>0.02 {settings.currency}</strong>
                         </p>
                     </div>
@@ -95,7 +95,7 @@ function ItemPreview({ heading, preview, title, category, author, royalties, typ
                             Royalties
                         </p>
                         <p className='text-xs mb-0 d-flex align-items-center'>
-                            <i className='la-sm text-primary las la-clock mx-1 text-primary'></i>8 Hrs ago
+                            <i className='la-sm text-primary las la-clock mx-1 text-primary'></i>Il y a 8 heures
                         </p>
                     </div>
                 </div>

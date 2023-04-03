@@ -39,13 +39,13 @@ function NFTAuthor({ history, owner, creator, ownerName, ownerAvatar, creatorNam
                             </Link>
                             <Link className='text-reset' to={`/users/${creator}`}>
                                 <p className='ms-2 mb-0 text-gray-800 fw-bold'>
-                                    {creatorName !== '' ? creatorName : 'Adi Gallia'}
+                                    {creatorName !== '' ? creatorName : 'MetaMusik'}
                                 </p>
                             </Link>
                         </div>
                     </li>
                     <li className='list-inline-item flex-shrink-0'>
-                        <h6 className='mb-3'>Owner</h6>
+                        <h6 className='mb-3'>Propriétaire</h6>
 
                         <div
                             className='d-flex align-items-center py-2 ps-2 pe-4 rounded-pill bg-white'

@@ -4,7 +4,7 @@ function ContactInfo(props) {
     return (
         <div className={props.gridWidth}>
             <h5 className='h2 mb-5 text-center' data-aos='fade-up' data-aos-delay='100'>
-                We are here to help you. Send us an email, join us on Slack or visit our office.
+            Nous sommes là pour vous aider. Envoyez-nous un courriel, rejoignez-nous sur Slack ou visitez notre bureau.
             </h5>
             <div className='row gy-3'>
                 <div className='col-lg-4 d-flex' data-aos='fade-up' data-aos-delay='200'>
@@ -12,8 +12,8 @@ function ContactInfo(props) {
                         <i className='las la-globe'></i>
                     </div>
                     <div className='ms-3'>
-                        <h6>Company Address</h6>
-                        <p className='text-sm text-muted mb-0'>2600 S Hoover St, Los Angeles, California(CA), 90007</p>
+                        <h6>Adresse de l'entreprise</h6>
+                        <p className='text-sm text-muted mb-0'>1 rue du Benelux, 44300 Nantes</p>
                     </div>
                 </div>
                 <div className='col-lg-4 d-flex' data-aos='fade-up' data-aos-delay='300'>
@@ -21,7 +21,7 @@ function ContactInfo(props) {
                         <i className='las la-phone'></i>
                     </div>
                     <div className='ms-3'>
-                        <h6>Hot lines</h6>
+                        <h6>Numéro de téléphone</h6>
                         <ul className='list-unstyled'>
                             <li>
                                 <a
@@ -49,15 +49,15 @@ function ContactInfo(props) {
                         <i className='las la-envelope'></i>
                     </div>
                     <div className='ms-3'>
-                        <h6>Email address</h6>
+                        <h6>Adresse électronique</h6>
                         <ul className='list-unstyled mb-0'>
                             <li>
                                 <a
                                     className='text-decoration-none text-sm text-muted mb-1'
                                     rel='noreferrer'
-                                    href='mailto:contact@metarealfights.com'
+                                    href='mailto:contact@metamusik.com'
                                 >
-                                    contact@metarealfights.com
+                                    contact@metamusik.com
                                 </a>
                             </li>
                         </ul>

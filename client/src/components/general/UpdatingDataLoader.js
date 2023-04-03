@@ -44,7 +44,7 @@ function UpdatingDataLoader({ heading }) {
                         </div>
                         <div className='ms-1'>
                             <p className='h3 text-uppercase mb-2'>{heading}</p>
-                            <p className='text-muted mb-0'>Please wait until we update your data</p>
+                            <p className='text-muted mb-0'>Veuillez patienter jusqu'à ce que nous mettions à jour vos données</p>
                         </div>
                     </div>
                 </div>

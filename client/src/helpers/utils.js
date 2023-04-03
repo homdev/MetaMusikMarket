@@ -58,15 +58,15 @@ export function formatCategory(category) {
     if (category === 'art') {
         category = 'Art';
     } else if (category === 'trendingCards') {
-        category = 'Trading Cards';
+        category = 'Cartes NFT';
     } else if (category === 'game') {
-        category = 'Game';
+        category = 'Jeu';
     } else if (category === 'memes') {
         category = 'Memes';
     } else if (category === 'collectibles') {
-        category = 'Collectibles';
+        category = 'Objets de collection';
     } else if (category === 'music') {
-        category = 'Music';
+        category = 'Musique';
     } else {
         category = 'General';
     }

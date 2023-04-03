@@ -177,7 +177,7 @@ function Dashboard() {
                 <div className='col-lg-4'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5>Total Registered Users</h5>
+                            <h5>Total des utilisateurs enregistrés</h5>
                             <p className='h2 fw-normal mb-0'>{usersNumber}</p>
                         </div>
                     </div>
@@ -185,7 +185,7 @@ function Dashboard() {
                 <div className='col-lg-4'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5>Total NFTs</h5>
+                            <h5>Total des NFT</h5>
                             <p className='h2 fw-normal mb-0'>{collectionNumber}</p>
                         </div>
                     </div>
@@ -193,7 +193,7 @@ function Dashboard() {
                 <div className='col-lg-4'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5>Open Auctions</h5>
+                            <h5>Enchères ouvertes</h5>
                             <p className='h2 fw-normal mb-0'>{auctionsNumber}</p>
                         </div>
                     </div>
@@ -201,7 +201,7 @@ function Dashboard() {
                 <div className='col-lg-4'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5>Marketplace Commission</h5>
+                            <h5>Commission du marché</h5>
                             <p className='h2 fw-normal mb-0'>{(settings.saleCommission / 1000) * 100}%</p>
                         </div>
                     </div>
@@ -209,7 +209,7 @@ function Dashboard() {
                 <div className='col-lg-4'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5>WhiteListed Users</h5>
+                            <h5>Utilisateurs sur liste blanche</h5>
                             <p className='h2 fw-normal mb-0'>{whiteListedNumber}</p>
                         </div>
                     </div>
@@ -217,7 +217,7 @@ function Dashboard() {
                 <div className='col-lg-4'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5>Marketplace Owner Profits</h5>
+                            <h5>Profits du propriétaire de la place de marché</h5>
                             <p className='h2 fw-normal mb-0'>
                                 {parseFloat(ownerFunds / 10 ** 18)}{' '}
                                 <span className='h5 fw-normal text-muted'>{settings.currency}</span>
@@ -228,7 +228,7 @@ function Dashboard() {
                 <div className='col-lg-12'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>Pending NFTs</h5>
+                            <h5 className='mb-4'>NFT en attente</h5>
                             <PendingNftsTable approveNft={approveNFTHandler} />
                         </div>
                     </div>
@@ -236,7 +236,7 @@ function Dashboard() {
                 <div className='col-lg-12'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>Users List</h5>
+                            <h5 className='mb-4'>Liste des utilisateurs</h5>
                             <UsersTable />
                         </div>
                     </div>
@@ -244,7 +244,7 @@ function Dashboard() {
                 <div className='col-lg-12'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>NFTs List</h5>
+                            <h5 className='mb-4'>Liste des NFT</h5>
                             <NftsTable blockNfts={BlockNftHandler} />
                         </div>
                     </div>
@@ -252,7 +252,7 @@ function Dashboard() {
                 <div className='col-lg-12'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>Auctions List</h5>
+                            <h5 className='mb-4'>Liste des ventes aux enchères</h5>
                             <AuctionsTable blockAuction={BlocAuctionHandler} />
                         </div>
                     </div>

@@ -10,7 +10,7 @@ function Category({ category }) {
                     <span className='text-white lh-reset'>{formatCategory(category)}</span>
                 </Link>
             ) : (
-                <span className='text-white'>No Cateogry</span>
+                <span className='text-white'>Pas de catégorie</span>
             )}
         </p>
     );

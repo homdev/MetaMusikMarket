@@ -77,7 +77,7 @@ function CategoryPage() {
                     ) : (
                         <>
                             <h6 className='fw-normal text-muted text-center mb-0'>
-                                Fetching data from the blockchain please wait...
+                            Récupération des données de la blockchain, veuillez patienter...
                             </h6>
                             <Loader />
                         </>
@@ -86,12 +86,12 @@ function CategoryPage() {
                         collectionCtx.collection.length !== 0 &&
                         collectionCtx.totalSupply !== '0' && (
                             <div className='text-center'>
-                                <h4 className='text-center'>There're no NFTs at the moment</h4>
+                                <h4 className='text-center'>Il n'y a pas de NFT pour le moment</h4>
                                 <p className='text-muted mb-3'>
-                                    Once there'll be NFTs that match is category we'll render them here
+                                Dès qu'il y aura des NFT correspondant à cette catégorie, nous les rendrons ici.
                                 </p>
                                 <Link className='btn btn-gradient-primary' to='/'>
-                                    Return Home
+                                Retour à l'accueil
                                 </Link>
                             </div>
                         )}

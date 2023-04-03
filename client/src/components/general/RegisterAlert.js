@@ -25,19 +25,19 @@ function RegisterAlert({ closeAlert }) {
                 <div className='col-lg-6 mx-auto' data-aos='fade-up' data-aos-delay='100'>
                     <div className='card p-lg-5 rounded-xl'>
                         <div className='card-body px-4 py-5'>
-                            <p className='h3'>We've noticed that you're not registered</p>
+                            <p className='h3'>Nous avons remarqué que vous n'êtes pas enregistré</p>
                             <p className='lead mb-3'>
-                                Please register first so you can interact with the marketplace functionalities
+                            Veuillez d'abord vous inscrire afin de pouvoir utiliser les fonctionnalités de la place de marché.
                             </p>
                             <ul className='list-inline mb-0'>
                                 <li className='list-inline-item m-1'>
                                     <Link to='/register' className='btn btn-primary' onClick={closeAlert}>
-                                        Register Now
+                                    S'inscrire
                                     </Link>
                                 </li>
                                 <li className='list-inline-item m-1'>
                                     <button className='btn btn-dark' tybe='button' onClick={closeAlert}>
-                                        Keep Browsing
+                                    Continuer à naviguer
                                     </button>
                                 </li>
                             </ul>

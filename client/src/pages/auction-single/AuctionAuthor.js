@@ -17,7 +17,7 @@ function AuctionAuthor({ history, owner, creator, ownerName, ownerAvatar, creato
             <div className='col-xl-8'>
                 <ul className='list-inline d-flex align-items-lg-center flex-column flex-lg-row'>
                     <li className='list-inline-item flex-shrink-0 me-4 mb-4 mb-lg-0'>
-                        <h6 className='mb-3'>Creator</h6>
+                        <h6 className='mb-3'>Créateur</h6>
                         <div
                             className='d-flex align-items-center py-2 ps-2 pe-4 rounded-pill bg-white'
                             style={{
@@ -39,13 +39,13 @@ function AuctionAuthor({ history, owner, creator, ownerName, ownerAvatar, creato
                             </Link>
                             <Link className='text-reset' to={`/users/${creator}`}>
                                 <p className='ms-2 mb-0 text-gray-800 fw-bold'>
-                                    {creatorName !== '' ? creatorName : 'Adi Gallia'}
+                                    {creatorName !== '' ? creatorName : 'MetaMusik'}
                                 </p>
                             </Link>
                         </div>
                     </li>
                     <li className='list-inline-item flex-shrink-0'>
-                        <h6 className='mb-3'>Owner</h6>
+                        <h6 className='mb-3'>Propriétaire</h6>
 
                         <div
                             className='d-flex align-items-center py-2 ps-2 pe-4 rounded-pill bg-white'

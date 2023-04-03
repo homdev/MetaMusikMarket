@@ -135,7 +135,7 @@ function UserBidsTable() {
                                 )
                             }
                         >
-                            Withdraw
+                            Se retirer
                         </button>
                     )}
                 </div>
@@ -147,7 +147,7 @@ function UserBidsTable() {
         activeBids.length > 0 &&
         auctionCtx.contract && (
             <>
-                <h3 className='h3 mb-4 text-center'>My Bids</h3>
+                <h3 className='h3 mb-4 text-center'>Mes offres</h3>
                 <DataTable
                     columns={columns}
                     data={activeBids}

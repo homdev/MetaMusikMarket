@@ -38,15 +38,15 @@ function AuctionHistory({ history, creator, mktAddress, owner }) {
                             </div>
                             <div className='ms-3'>
                                 <p className='mb-0 text-sm text-muted'>
-                                    Created By
+                                Créé par
                                     <Link className='text-reset' to={`/users/${creator.account}`}>
                                         <strong className='ms-2 text-dark'>
-                                            {creator && creator.name === '' ? 'Adi Gallia' : creator.name}
+                                            {creator && creator.name === '' ? 'MetaMusik' : creator.name}
                                         </strong>
                                     </Link>
                                 </p>
                                 <p className='mb-0 text-sm text-muted'>
-                                    at
+                                à
                                     <strong className='ms-2 fw-normal text-dark text-xs'>
                                         {formteFullDate(creator.time)}
                                     </strong>
@@ -79,13 +79,13 @@ function AuctionHistory({ history, creator, mktAddress, owner }) {
                                             <p className='mb-0 text-sm text-muted'>
                                                 <Link className='text-reset' to={`/users/${el.to.account}`}>
                                                     <strong className='me-2 text-dark'>
-                                                        {el.to.name === '' ? 'Adi Gallia' : el.to.name}
+                                                        {el.to.name === '' ? 'MetaMusik' : el.to.name}
                                                     </strong>
                                                 </Link>
-                                                Cancel Auction
+                                                Annuler l'enchère
                                             </p>
                                             <p className='mb-0 text-sm text-muted'>
-                                                at
+                                                à
                                                 <strong className='ms-2 fw-normal text-dark text-xs'>
                                                     {formteFullDate(el.time)}
                                                 </strong>
@@ -113,15 +113,15 @@ function AuctionHistory({ history, creator, mktAddress, owner }) {
                                         </div>
                                         <div className='ms-3'>
                                             <p className='mb-0 text-sm text-muted'>
-                                                Transferred to
+                                            Transféré à
                                                 <Link className='text-reset' to={`/users/${el.to.account}`}>
                                                     <strong className='ms-2 text-dark'>
-                                                        {el.to.name === '' ? 'Adi Gallia' : el.to.name}
+                                                        {el.to.name === '' ? 'MetaMusik' : el.to.name}
                                                     </strong>
                                                 </Link>
                                             </p>
                                             <p className='mb-0 text-sm text-muted'>
-                                                at
+                                                à
                                                 <strong className='ms-2 fw-normal text-dark text-xs'>
                                                     {formteFullDate(el.time)}
                                                 </strong>
@@ -151,13 +151,13 @@ function AuctionHistory({ history, creator, mktAddress, owner }) {
                                             <p className='mb-0 text-sm text-muted'>
                                                 <Link className='text-reset' to={`/users/${el.to.account}`}>
                                                     <strong className='mx-2 text-dark'>
-                                                        {el.from.name === '' ? 'Adi Gallia' : el.from.name}
+                                                        {el.from.name === '' ? 'MetaMusik' : el.from.name}
                                                     </strong>
                                                 </Link>
-                                                Set Auction
+                                                Mise aux enchères
                                             </p>
                                             <p className='mb-0 text-sm text-muted'>
-                                                at
+                                                à
                                                 <strong className='ms-2 fw-normal text-dark text-xs'>
                                                     {formteFullDate(el.time)}
                                                 </strong>
@@ -187,16 +187,16 @@ function AuctionHistory({ history, creator, mktAddress, owner }) {
                                             <p className='mb-0 text-sm text-muted'>
                                                 <Link className='text-reset' to={`/users/${el.to.account}`}>
                                                     <strong className='mx-2 text-dark'>
-                                                        {el.from.name === '' ? 'Adi Gallia' : el.from.name}
+                                                        {el.from.name === '' ? 'MetaMusik' : el.from.name}
                                                     </strong>
                                                 </Link>
-                                                Add price{' '}
+                                                Ajouter un prix{' '}
                                                 <strong className='lh-reset text-dark'>
                                                     {formatPrice(el.price)} {settings.currency}
                                                 </strong>
                                             </p>
                                             <p className='mb-0 text-sm text-muted'>
-                                                at
+                                                à
                                                 <strong className='ms-2 fw-normal text-dark text-xs'>
                                                     {formteFullDate(el.time)}
                                                 </strong>

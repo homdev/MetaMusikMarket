@@ -43,10 +43,10 @@ function ContactForm({ gridWidth }) {
                     ></i>
                 </p>
 
-                <h1 className='h2'>Thanks for contacting us.</h1>
-                <p className='text-muted'>We'll reply back as soon as possible.</p>
+                <h1 className='h2'>Merci de nous avoir contactés.</h1>
+                <p className='text-muted'>Nous vous répondrons dans les plus brefs délais.</p>
                 <Link to='/' className='btn btn-gradient-primary'>
-                    Return Home
+                Retour à l'accueil
                 </Link>
             </div>
         );
@@ -55,13 +55,13 @@ function ContactForm({ gridWidth }) {
     return (
         <div className={gridWidth}>
             <h2 className='h2 mb-5 text-center' data-aos='fade-up' data-aos-delay='100' data-aos-once='true'>
-                Drop us a line
+            Envoyez-nous un message
             </h2>
             <form className='contact-form needs-validation' noValidate onSubmit={handleSubmit}>
                 <div className='row gy-3'>
                     <div className='col-lg-6' data-aos='fade' data-aos-delay='200' data-aos-once='true'>
                         <label className='form-label fw-bold lead' htmlFor='fullname'>
-                            Full name
+                        Nom complet
                         </label>
                         <div className='input-icon'>
                             <div className='input-icon-text'>
@@ -74,17 +74,17 @@ function ContactForm({ gridWidth }) {
                                 name='fullname'
                                 id='fullname'
                                 required={true}
-                                placeholder='Enter your full name'
+                                placeholder='Saisissez votre nom complet'
                             />
                             <div className='invalid-feedback bg-danger rounded-sm text-white px-3 py-1'>
-                                Please enter your full name
+                            Veuillez saisir votre nom complet
                             </div>
                         </div>
                     </div>
 
                     <div className='col-lg-6' data-aos='fade' data-aos-delay='300' data-aos-once='true'>
                         <label className='form-label fw-bold lead' htmlFor='email'>
-                            Email address
+                        Adresse électronique
                         </label>
                         <div className='input-icon'>
                             <div className='input-icon-text'>
@@ -97,17 +97,17 @@ function ContactForm({ gridWidth }) {
                                 name='email'
                                 id='email'
                                 required={true}
-                                placeholder='Enter your email address'
+                                placeholder='Saisissez votre adresse électronique'
                             />
                             <div className='invalid-feedback bg-danger rounded-sm text-white px-3 py-1'>
-                                Please enter your emaill address
+                            Veuillez saisir votre adresse électronique
                             </div>
                         </div>
                     </div>
 
                     <div className='col-lg-12' data-aos='fade' data-aos-delay='400' data-aos-once='true'>
                         <label className='form-label fw-bold lead' htmlFor='subject'>
-                            Subject
+                            Objet
                         </label>
                         <div className='input-icon'>
                             <div className='input-icon-text'>
@@ -119,7 +119,7 @@ function ContactForm({ gridWidth }) {
                                 autoComplete='off'
                                 name='subject'
                                 id='subject'
-                                placeholder='Enter your subject'
+                                placeholder='Entrez votre sujet'
                             />
                         </div>
                     </div>
@@ -133,17 +133,17 @@ function ContactForm({ gridWidth }) {
                             rows='4'
                             name='message'
                             id='message'
-                            placeholder='How can we help you'
+                            placeholder='Comment pouvons-nous vous aider ?'
                             required={true}
                         ></textarea>
                         <div className='invalid-feedback bg-danger rounded-sm text-white px-3 py-1'>
-                            Please enter your message
+                        Veuillez saisir votre message
                         </div>
                     </div>
 
                     <div className='col-lg-12' data-aos='fade' data-aos-delay='600' data-aos-once='true'>
                         <button className='btn btn-primary w-100' type='submit' disabled={state.submitting}>
-                            <i className='las la-paper-plane me-2'></i>Send your message
+                            <i className='las la-paper-plane me-2'></i>Envoyez votre message
                         </button>
                     </div>
                 </div>

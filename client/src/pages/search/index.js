@@ -101,7 +101,7 @@ function SearchPage() {
                     <div className='row align-items-center'>
                         <div className='col-xl-7'>
                             <h1 data-aos='fade-right' data-aos-delay='100'>
-                                Hmmmm... What're you looking for?
+                                Hmmmm... Que cherchez-vous ?
                             </h1>
                             <p className='text-muted mb-4' data-aos='fade-right' data-aos-delay='200'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse quis
@@ -157,8 +157,8 @@ function SearchPage() {
                             </form>
                             {query !== '' && searchResultsLength > 0 ? (
                                 <p className='lead text-muted mb-0'>
-                                    Found <strong className='text-dark fw-bold mx-2'>{searchResultsLength}</strong>{' '}
-                                    items match your search
+                                    il y a <strong className='text-dark fw-bold mx-2'>{searchResultsLength}</strong>{' '}
+                                    articles correspondant à votre recherche
                                 </p>
                             ) : null}
 
@@ -166,8 +166,8 @@ function SearchPage() {
                                 <div className='d-flex'>
                                     <i className='las la-exclamation mb-2' style={{ fontSize: '3rem' }}></i>
                                     <div className='ms-2'>
-                                        <h3 className='h3'>Cannot find any assets that match your search</h3>
-                                        <p className='text-muted mb-0'>You can search for another term...</p>
+                                        <h3 className='h3'>Aucun actif ne correspond à votre recherche</h3>
+                                        <p className='text-muted mb-0'>Vous pouvez rechercher un autre terme...</p>
                                     </div>
                                 </div>
                             ) : null}

@@ -2,32 +2,32 @@ import React from 'react';
 
 export const techQuestions = [
     {
-        question: 'What stack is the marketplace built with?',
+        question: 'Avec quelle pile la place de marché est-elle construite ?',
         answer: (
             <div className='text-muted mb-0'>
-                We use:
+                Nous utilisons :
                 <ul className='mb-0'>
                     <li>
-                        <strong className='text-dark'>Solidity </strong>- building smart contracts
+                        <strong className='text-dark'>Solidity </strong>- construire des contrats intelligents
                     </li>
                     <li>
-                        <strong className='text-dark'>Truffle suite </strong> – development environment, testing
-                        framework, and asset pipeline for blockchains.
+                        <strong className='text-dark'>Truffle suite </strong> – l'environnement de développement, le cadre
+                        de test et un pipeline d'actifs pour les blockchains.
                     </li>
                     <li>
-                        <strong className='text-dark'>Web3.js </strong> – JavaScript Library that allows interacting
-                        with a local or remote Ethereum node
+                        <strong className='text-dark'>Web3.js </strong> – Bibliothèque JavaScript qui permet d'interagir
+                        avec un nœud Ethereum local ou distant
                     </li>
                     <li>
-                        <strong className='text-dark'>IPFS </strong> – Server to save images with metadata in the
-                        blockchain
+                        <strong className='text-dark'>IPFS </strong> – Serveur pour enregistrer des images avec des métadonnées dans la
+                        chaîne de blocs
                     </li>
                     <li>
-                        <strong className='text-dark'>MetaMask </strong> – Crypto wallet for trading NFTs
+                        <strong className='text-dark'>MetaMask </strong> – Portefeuille de crypto-monnaie pour l'échange de NFT
                     </li>
                     <li>
-                        <strong className='text-dark'>React.js </strong> – JavaScript framework to build the user
-                        interface and connect everything together
+                        <strong className='text-dark'>React.js </strong> – JavaScript pour construire l'interface utilisateur et
+                        et de tout relier entre eux
                     </li>
                     <li>
                         <strong className='text-dark'>Bootstrap 5 </strong> – UI
@@ -37,7 +37,7 @@ export const techQuestions = [
         ),
     },
     {
-        question: 'What blockchains are supported?',
+        question: 'Quelles sont les blockchains prises en charge ?',
         answer: (
             <div className='text-muted mb-0'>
                 Our products support these blockchains:
@@ -52,23 +52,23 @@ export const techQuestions = [
         ),
     },
     {
-        question: 'What wallets are supported?',
-        answer: 'At the moment, you can use MetaMask wallet.',
+        question: 'Quels sont les portefeuilles pris en charge ?',
+        answer: 'Actuellement, vous pouvez utiliser le portefeuille MetaMask.',
     },
     {
-        question: 'More questions?',
+        question: "D'autres questions ?",
         answer: (
             <p className='text-muted mb-0'>
-                If you can’t find the answers here,{' '}
+                Si vous ne trouvez pas les réponses ici,{' '}
                 <a
                     rel='noopener noreferrer'
                     href='https://webconcepter.com/contact-us/'
                     className='text-primary fw-bold'
                     target='_blank'
                 >
-                    get in touch
+                    prendre contact
                 </a>
-                . We will be happy to help.
+                . Nous serons heureux de vous aider.
             </p>
         ),
     },
@@ -76,67 +76,67 @@ export const techQuestions = [
 
 export const purchaseQuestions = [
     {
-        question: 'What payment methods do you accept?',
+        question: 'Quels sont les modes de paiement acceptés ?',
         answer: (
             <p className='text-muted mb-0'>
-                We accept all the major payment card providers, Apple Pay, Google Pay, and PayPal.
+                Nous acceptons tous les principaux fournisseurs de cartes de paiement, Apple Pay, Google Pay et PayPal..
             </p>
         ),
     },
     {
-        question: 'On how many websites can I use your product?',
+        question: 'Sur combien de sites Internet puis-je utiliser votre produit ?',
         answer: (
             <>
                 <p className='text-muted'>
-                    If you will choose the <strong className='text-dark'>Startup Plan</strong>, you can use the product
-                    on one website (+ one development environment).
+                Si vous choisissez l'option <strong className='text-dark'>Plan de démarrage</strong>, vous pouvez utiliser le produit
+                    sur un seul site web (+ un environnement de développement).
                 </p>
                 <p className='text-muted mb-0'>
-                    If you opt for the <strong className='text-dark'>Unlimited Plan</strong>, you can use the product on
-                    as many websites as you wish.
+                Si vous optez pour le <strong className='text-dark'>Plan illimité</strong>, vous pouvez utiliser le produit sur
+                    autant de sites web que vous le souhaitez.
                 </p>
             </>
         ),
     },
     {
-        question: 'What is your refund policy?',
+        question: 'Quelle est votre politique de remboursement ?',
         answer: (
             <>
                 <p className='text-muted'>
-                    You have 24 hours to inspect your purchase and to determine if it does not meet the expectations
-                    laid forth by us. If you wish to receive a refund, Web3 will issue you a refund and ask you
-                    to specify how the product failed to live up to expectations.
+                Vous disposez de 24 heures pour inspecter votre achat et déterminer s'il ne répond pas aux attentes que nous avons formulées.
+                    attentes que nous avons formulées. Si vous souhaitez être remboursé, Web3 vous remboursera et vous demandera de préciser en quoi le produit n'a pas répondu à vos attentes.
+                    de préciser en quoi le produit n'a pas répondu aux attentes.
                 </p>
                 <p className='text-muted'>
-                    However, we are not obliged to give refunds in any of the situations listed below.
+                Toutefois, nous ne sommes pas obligés d'accorder des remboursements dans les situations énumérées ci-dessous.
                 </p>
                 <ul className='mb-0'>
-                    <li>You don’t want it after you’ve downloaded it</li>
-                    <li>You change your mind</li>
-                    <li>You bought an item by mistake</li>
-                    <li>You do not have sufficient expertise to use the item.</li>
+                    <li>Vous n'en voulez pas après l'avoir téléchargé</li>
+                    <li>Vous changez d'avis</li>
+                    <li>Vous avez acheté un article par erreur</li>
+                    <li>Vous n'avez pas les compétences suffisantes pour utiliser l'article.</li>
                 </ul>
             </>
         ),
     },
     {
-        question: 'Is Sales Tax or VAT included in the price?',
-        answer: 'VAT or Sales Tax are included in the product price.',
+        question: 'La taxe sur les ventes ou la TVA est-elle incluse dans le prix ?',
+        answer: 'La TVA ou la taxe sur les ventes sont incluses dans le prix du produit.',
     },
     {
-        question: 'More questions?',
+        question: "D'autres questions ?",
         answer: (
             <p className='text-muted mb-0'>
-                If you can’t find the answers here,{' '}
+                Si vous ne trouvez pas les réponses ici,{' '}
                 <a
                     rel='noopener noreferrer'
                     href='https://webconcepter.com/contact-us/'
                     className='text-primary fw-bold'
                     target='_blank'
                 >
-                    get in touch
+                    prendre contact
                 </a>
-                . We will be happy to help.
+                . Nous serons heureux de vous aider.
             </p>
         ),
     },
@@ -144,22 +144,22 @@ export const purchaseQuestions = [
 
 export const licenseQuestions = [
     {
-        question: 'On how many websites can I use your product?',
+        question: 'Sur combien de sites Internet puis-je utiliser votre produit ?',
         answer: (
             <>
                 <p className='text-muted'>
-                    If you will choose the <strong className='text-dark'>Startup Plan</strong>, you can use the product
-                    on one website (+ one development environment).
+                Si vous choisissez l'option <strong className='text-dark'>Plan de démarrage</strong>, vous pouvez utiliser le produit
+                    sur un seul site web (+ un environnement de développement).
                 </p>
                 <p className='text-muted mb-0'>
-                    If you opt for the <strong className='text-dark'>Unlimited Plan</strong>, you can use the product on
+                Si vous optez pour le <strong className='text-dark'>Plan illimité</strong>, you can use the product on
                     as many websites as you wish.
                 </p>
             </>
         ),
     },
     {
-        question: 'Is the price of the product one-time or recurring (monthly/yearly)?',
+        question: 'Le prix du produit est-il unique ou récurrent (mensuel/annuel) ?',
         answer: (
             <>
                 <p className='text-muted'>
@@ -189,19 +189,19 @@ export const licenseQuestions = [
         ),
     },
     {
-        question: 'More questions?',
+        question: "D'autres questions ?",
         answer: (
             <p className='text-muted mb-0'>
-                If you can’t find the answers here,{' '}
+                Si vous ne trouvez pas les réponses ici,{' '}
                 <a
                     rel='noopener noreferrer'
                     href='https://webconcepter.com/contact-us/'
                     className='text-primary fw-bold'
                     target='_blank'
                 >
-                    get in touch
+                    prendre contact
                 </a>
-                . We will be happy to help.
+                . Nous serons heureux de vous aider.
             </p>
         ),
     },
@@ -225,7 +225,7 @@ export const supportQuestions = [
         ),
     },
     {
-        question: 'How can I get support?',
+        question: "Comment puis-je obtenir de l'aide ?",
         answer: (
             <>
                 <p className='text-muted'>The Startup Plan comes with e-mail support.</p>
@@ -255,19 +255,19 @@ export const supportQuestions = [
         ),
     },
     {
-        question: 'More questions?',
+        question: "D'autres questions ?",
         answer: (
             <p className='text-muted mb-0'>
-                If you can’t find the answers here,{' '}
+                Si vous ne trouvez pas les réponses ici,{' '}
                 <a
                     rel='noopener noreferrer'
                     href='https://webconcepter.com/contact-us/'
                     className='text-primary fw-bold'
                     target='_blank'
                 >
-                    get in touch
+                    prendre contact
                 </a>
-                . We will be happy to help.
+                . Nous serons heureux de vous aider.
             </p>
         ),
     },

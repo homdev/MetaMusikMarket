@@ -159,7 +159,7 @@ function PendingNftsTable({ approveNft }) {
                                 setSelectedNfts([]);
                             }}
                         >
-                            Approve Selected
+                            Approuver la sélection
                         </button>
                     )}
                 </>

@@ -115,32 +115,32 @@ function AuctionSinglePage() {
                         border: marketplaceCtx.themeMode === 'light' ? '3px solid #e9ecef' : '3px solid #282830',
                     }}
                 >
-                    <h6 className='mb-0 fw-bold text-uppercase letter-spacing-0'>Auction Ended</h6>
+                    <h6 className='mb-0 fw-bold text-uppercase letter-spacing-0'>Enchères terminées</h6>
                     {web3Ctx.account === topBidder && topBid > 0 && (
                         <>
-                            <p className='text-muted mb-2'>Great! you win the auction.</p>
+                            <p className='text-muted mb-2'>Super ! Vous remportez l'enchère.</p>
                             <button
                                 className='btn btn-primary btn-sm py-2 px-4'
                                 type='button'
                                 onClick={claimNFTHandler}
                             >
-                                <span className='lh-reset'>Claim your NFT</span>
+                                <span className='lh-reset'>Réclamez votre NFT</span>
                             </button>
                         </>
                     )}
 
                     {topBid === 0 && web3Ctx.account === auctionData.user && (
                         <>
-                            <p className='text-muted mb-2'>No one was interested.</p>
+                            <p className='text-muted mb-2'>Personne n'était intéressé.</p>
                             <button className='btn btn-primary btn-sm py-2 px-4' type='button' onClick={cancelHandler}>
-                                <span className='lh-reset'>Restore your NFT</span>
+                                <span className='lh-reset'>Rétablissez votre NFT</span>
                             </button>
                         </>
                     )}
 
                     {topBid > 0 && web3Ctx.account === auctionData.user && (
                         <>
-                            <p className='text-muted mb-2'>This NFT has another owner now, it's no longer yours</p>
+                            <p className='text-muted mb-2'>Ce NFT a un autre propriétaire, il n'est plus le vôtre.</p>
                         </>
                     )}
                 </div>
@@ -166,19 +166,19 @@ function AuctionSinglePage() {
                             <div className='countdown rounded-lg mt-4 mb-5'>
                                 <div className='countdown-item flex-fill'>
                                     <div className='countdown-item-number bg-white w-100'>{days}</div>
-                                    <span>Days</span>
+                                    <span>Jours</span>
                                 </div>
                                 <div className='countdown-item flex-fill'>
                                     <div className='countdown-item-number bg-white w-100'>{hours}</div>
-                                    <span>Hours</span>
+                                    <span>Heurs</span>
                                 </div>
                                 <div className='countdown-item flex-fill'>
                                     <div className='countdown-item-number bg-white w-100'>{minutes}</div>
-                                    <span>Mins</span>
+                                    <span>Minutes</span>
                                 </div>
                                 <div className='countdown-item flex-fill'>
                                     <div className='countdown-item-number bg-white w-100'>{seconds}</div>
-                                    <span>Secs</span>
+                                    <span>Secondes</span>
                                 </div>
                             </div>
                         </div>
@@ -301,7 +301,7 @@ function AuctionSinglePage() {
     //      CHANGE PAGE TITLE
     /*** =============================================== */
     useEffect(() => {
-        document.title = `${currentAsset.length > 0 ? currentAsset[0].title : 'NFT Item'} | MetaRealFights NFT`;
+        document.title = `${currentAsset.length > 0 ? currentAsset[0].title : 'NFT Item'} | metamusik NFT`;
     }, [currentAsset, id]);
 
     /*** =============================================== */
@@ -541,10 +541,10 @@ function AuctionSinglePage() {
                         <p className='mb-0 fw-bold' style={{ fontSize: '10rem' }}>
                             404
                         </p>
-                        <h1 className='h2 text-uppercase'>Not Found</h1>
-                        <p className='text-muted'>This page is not found, return to Home page</p>
+                        <h1 className='h2 text-uppercase'>Non trouvé</h1>
+                        <p className='text-muted'>Cette page n'a pas été trouvée, retournez à la page d'accueil</p>
                         <Link to='/' className='btn btn-gradient-primary'>
-                            Homepage
+                        Page d'accueil
                         </Link>
                     </div>
                 </div>
@@ -579,11 +579,11 @@ function AuctionSinglePage() {
                             onChange={(e) => setBidPrice(e.target.value)}
                         />
                         <button type='submit' className='btn btn-primary w-100 rounded-sm mb-2'>
-                            Place Bid
+                        Placez l'offre
                         </button>
                         <p className='mb-0 text-center text-muted mb-0'>
-                            You'll find your funds into <span className='text-primary'>My Account</span> page if you
-                            havn't won this auction
+                        Vous trouverez vos fonds dans <span className='text-primary'>Mon compte</span> si vous n'avez pas
+                            n'avez pas remporté cette enchère
                         </p>
                     </form>
                 </div>
@@ -591,8 +591,8 @@ function AuctionSinglePage() {
             <section className='pt-5 bg-light'>
                 {collectionCtx.collection.length === 0 && auctionData ? (
                     <div className='py-5 text-center mt-5 mb-3'>
-                        <h1 className='h2 mt-5'>Fetching item details</h1>
-                        <p className='text-muted'>Please wait until we prepare your data.</p>
+                        <h1 className='h2 mt-5'>Récupération des détails de l'article</h1>
+                        <p className='text-muted'>Veuillez patienter jusqu'à ce que nous préparions vos données.</p>
                         <Loader />
                     </div>
                 ) : (
@@ -615,10 +615,10 @@ function AuctionSinglePage() {
                                                 </div>
                                             </Link>
                                             <div className='ms-3 text-muted d-flex align-items-center'>
-                                                By
+                                                Par
                                                 <strong className='fw-bold lh-1 ms-2 lead text-dark'>
                                                     <Link className='text-reset' to={`/users/${asset.creator}`}>
-                                                        {creatorName ? creatorName : 'Adi Gallia'}
+                                                        {creatorName ? creatorName : 'MetaMusik'}
                                                     </Link>
                                                 </strong>
                                             </div>
@@ -657,7 +657,7 @@ function AuctionSinglePage() {
                                                             }`}
                                                             onClick={() => setHistoryType('bids')}
                                                         >
-                                                            <span className='lh-reset'>Bids</span>
+                                                            <span className='lh-reset'>Offres</span>
                                                         </button>
                                                         <button
                                                             className={`toggle-nav-btn flex-fill ${
@@ -665,7 +665,7 @@ function AuctionSinglePage() {
                                                             }`}
                                                             onClick={() => setHistoryType('prices')}
                                                         >
-                                                            <span className='lh-reset'>Price Log</span>
+                                                            <span className='lh-reset'>Journal des prix</span>
                                                         </button>
                                                     </div>
                                                     {historyType === 'transactions' && (
@@ -729,7 +729,7 @@ function AuctionSinglePage() {
                                                             target='_blank'
                                                             rel='noopener noreferrer'
                                                         >
-                                                            <i className='las la-cloud me-2'></i> Download Content
+                                                            <i className='las la-cloud me-2'></i> Télécharger le contenu
                                                         </a>
                                                     </div>
                                                 </div>
@@ -777,7 +777,7 @@ function AuctionSinglePage() {
                             <div className='row'>
                                 <div className='col-lg-6'>
                                     <h2 data-aos='fade-right' data-aos-delay='100' data-aos-once='true'>
-                                        Similar from this category
+                                    Similaires à cette catégorie
                                     </h2>
                                     <p
                                         className='text-muted lead mb-0'

@@ -69,16 +69,16 @@ function AuctionBids({ bids }) {
 
                                 <div className='ms-auto'>
                                     {bid.withdraw ? (
-                                        <span className='badge lh-reset bg-danger'>Cancelled</span>
+                                        <span className='badge lh-reset bg-danger'>Annulé</span>
                                     ) : (
-                                        <span className='badge lh-reset bg-info'>Active</span>
+                                        <span className='badge lh-reset bg-info'>Actif</span>
                                     )}
                                 </div>
                             </div>
                         );
                     })}
 
-                    {bids && bids.length === 0 && <h6 className='text-center mb-0'>There're no bids at the moment</h6>}
+                    {bids && bids.length === 0 && <h6 className='text-center mb-0'>Il n'y a pas d'offres pour le moment</h6>}
                 </div>
             </div>
         </div>

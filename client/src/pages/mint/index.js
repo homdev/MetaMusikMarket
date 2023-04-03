@@ -139,7 +139,7 @@ function MintNFTPage() {
     //      CHANGE PAGE TITLE
     /*** ---------------------------------------------- */
     useEffect(() => {
-        document.title = `Mint an NFT | ${settings.UISettings.marketplaceBrandName}`;
+        document.title = `Créer un NFT | ${settings.UISettings.marketplaceBrandName}`;
     }, []);
 
     /*** ---------------------------------------------- */
@@ -343,7 +343,7 @@ function MintNFTPage() {
     return (
         <>
             {isMetaMaskOpened ? <MetaMaskLoader /> : null}
-            <PageBanner heading='Mint an NFT' />
+            <PageBanner heading="Créer un NFT" />
             <section className='py-5'>
                 <div className='container py-5'>
                     <div className='row g-5'>
@@ -351,7 +351,7 @@ function MintNFTPage() {
                             <div className='mb-5 pb-4'>
                                 <div className='d-flex align-items-center  mb-4'>
                                     <i className='las la-cloud la-3x text-primary me-2'></i>
-                                    <h2 className='h4 mb-0'>Upload Type</h2>
+                                    <h2 className='h4 mb-0'>Type de téléchargement</h2>
                                 </div>
                                 <div className='toggle-nav'>
                                     <button
@@ -388,18 +388,18 @@ function MintNFTPage() {
                                 {nftType === 'image' ? (
                                     <div className='d-flex align-items-center justify-content-center mb-4'>
                                         <i className='las la-image la-3x text-primary me-2'></i>
-                                        <h2 className='h4 mb-0'>Upload Image</h2>
+                                        <h2 className='h4 mb-0'>Télécharger l'image</h2>
                                     </div>
                                 ) : nftType === 'audio' ? (
                                     <div className='d-flex align-items-center justify-content-center mb-4'>
                                         <i className='las la-record-vinyl la-3x text-primary me-2'></i>
-                                        <h2 className='h4 mb-0'>Upload Audio</h2>
+                                        <h2 className='h4 mb-0'>Télécharger l'audio</h2>
                                     </div>
                                 ) : (
                                     nftType === 'video' && (
                                         <div className='d-flex align-items-center justify-content-center mb-4'>
                                             <i className='las la-video la-3x text-primary me-2'></i>
-                                            <h2 className='h4 mb-0'>Upload Video</h2>
+                                            <h2 className='h4 mb-0'>Télécharger la vidéo</h2>
                                         </div>
                                     )
                                 )}
@@ -441,9 +441,9 @@ function MintNFTPage() {
                                                         style={{ fontSize: '5rem' }}
                                                     ></i>
                                                     <h6 className='mb-0 fw-normal text-gray-500'>
-                                                        Click here to uplad
+                                                        Cliquez ici pour télécharger
                                                     </h6>
-                                                    <p className='text-muted mb-0'>Waiting to catch your file</p>
+                                                    <p className='text-muted mb-0'>En attente de votre dossier</p>
                                                     <p className='text-danger'>{fileValidationMsg}</p>
                                                 </div>
                                             )}
@@ -466,14 +466,14 @@ function MintNFTPage() {
 
                                 <div className='d-flex align-items-center mb-4'>
                                     <i className='las la-icons la-3x me-2 text-primary'></i>
-                                    <h2 className='h4 mb-0'>Add Info</h2>
+                                    <h2 className='h4 mb-0'>Plus d'informations</h2>
                                 </div>
 
                                 <div>
                                     <div className='row gy-3 has-field-icons'>
                                         <div className='col-lg-12'>
                                             <label className='form-label text-dark lead fw-bold' htmlFor='nft_title'>
-                                                Title
+                                                Titre
                                             </label>
                                             <div className='input-icon'>
                                                 <div className='input-icon-text bg-none'>
@@ -494,7 +494,7 @@ function MintNFTPage() {
 
                                         <div className='col-lg-6'>
                                             <label className='form-label text-dark lead fw-bold' htmlFor='nft_category'>
-                                                Category
+                                                Catégories
                                             </label>
                                             <div className='input-icon flex-nowrap category-select'>
                                                 <div className='input-icon-text bg-none'>
@@ -542,7 +542,7 @@ function MintNFTPage() {
                                                     className='form-label text-dark lead fw-bold mb-0'
                                                     htmlFor='nft_royalties'
                                                 >
-                                                    Properties
+                                                    Propriété
                                                 </label>
                                                 <button className='add-btn ms-2 border-gray-300' type='button'>
                                                     <i className='las la-plus text-gray-800'></i>
@@ -557,7 +557,7 @@ function MintNFTPage() {
                                                         <input
                                                             type='text'
                                                             className='form-control prop prop-name bg-white shadow-0'
-                                                            placeholder='Name'
+                                                            placeholder='Nom'
                                                         />
                                                     </div>
                                                 </div>
@@ -569,7 +569,7 @@ function MintNFTPage() {
                                                         <input
                                                             type='text'
                                                             className='form-control prop prop-value bg-white shadow-0'
-                                                            placeholder='Value'
+                                                            placeholder='Valeur'
                                                         />
                                                     </div>
                                                 </div>
@@ -592,7 +592,7 @@ function MintNFTPage() {
                                                     className={`form-control shadow-0 bg-white pt-3 ${descriptionClass}`}
                                                     name='nft_description'
                                                     id='nft_description'
-                                                    placeholder='Provide some good description about your asset'
+                                                    placeholder='Fournissez une bonne description de votre bien'
                                                     value={enteredDescription}
                                                     onChange={enteredDescriptionHandler}
                                                 ></textarea>
@@ -612,7 +612,7 @@ function MintNFTPage() {
                                                     }}
                                                 />
                                                 <label className='fw-bold h6 ms-3 pt-1 mb-0' htmlFor='unlockable'>
-                                                    Unlock once purchased
+                                                    Débloquer une fois l'achat effectué
                                                 </label>
                                             </div>
                                         </div>
@@ -623,7 +623,7 @@ function MintNFTPage() {
                                                     className='form-label text-dark lead fw-bold'
                                                     htmlFor='unlockableContent'
                                                 >
-                                                    Unlockable Content
+                                                    Contenu à débloquer
                                                 </label>
                                                 <div className='input-icon'>
                                                     <div className='input-icon-text bg-none'>
@@ -635,7 +635,7 @@ function MintNFTPage() {
                                                         autoComplete='off'
                                                         name='unlockable_content'
                                                         id='unlockableContent'
-                                                        placeholder='Add a download url for your content...'
+                                                        placeholder='Ajoutez une url de téléchargement pour votre contenu...'
                                                         value={withUnlockable ? unlockable : ''}
                                                         onChange={enteredUnlockableHandler}
                                                     />
@@ -647,21 +647,21 @@ function MintNFTPage() {
                                         <div className='col-12'>
                                             {userCtx.userIsRegistered ? (
                                                 <button className='btn btn-primary mb-3' type='submit'>
-                                                    <i className='lab la-ethereum me-2'></i>Mint NFT
+                                                    <i className='lab la-ethereum me-2'></i>Créer un NFT
                                                 </button>
                                             ) : (
                                                 <>
                                                     {window.ethereum && networkId === settings.networkId ? (
                                                         <Link className='btn btn-primary' to='/register'>
-                                                            <i className='las la-user me-2'></i>Register to Mint
+                                                            <i className='las la-user me-2'></i>S'inscrire à la Monnaie
                                                         </Link>
                                                     ) : (
                                                         <div className='py-3 px-4 d-inline-block lh-reset bg-light rounded'>
                                                             <p className='fw-bold mb-2'>
-                                                                Visitors cannot perform this action
+                                                                Les visiteurs ne peuvent pas effectuer cette action
                                                             </p>
                                                             <span className='text-muted'>
-                                                                Connect a wallet and try again
+                                                                Connecter un portefeuille et réessayer
                                                             </span>
                                                         </div>
                                                     )}
@@ -676,7 +676,7 @@ function MintNFTPage() {
                         {/* PREVIEW ITEM */}
                         <div className='col-xl-4' data-aos='fade' data-aos-delay='200'>
                             <ItemPreview
-                                heading='Preview Item'
+                                heading="Aperçu de l'article"
                                 type={nftType}
                                 preview={preview}
                                 title={enteredName}

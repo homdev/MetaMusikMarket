@@ -1,10 +1,10 @@
-# MetaRealFights | NFT Marketplace
+# metamusik | NFT Marketplace
 
-**MetaRealFights** is an online marketplace where you can buy, sell or trade NFT tokens. It gives creators a direct way to sell their non-fungible assets such as artwork, and customers can purchase these assets by using a cryptocurrency.
+**metamusik** is an online marketplace where you can buy, sell or trade NFT tokens. It gives creators a direct way to sell their non-fungible assets such as artwork, and customers can purchase these assets by using a cryptocurrency.
 
-Anyone can sign up to MetaRealFights and link his crypto wallet with it [Supports only MetaMask Wallet for now] and start trading. MetaRealFights will feature listings of all of the different kinds of NFTs such as art, collectibles, domain names, music, photography, sports trading cards... etc.
+Anyone can sign up to metamusik and link his crypto wallet with it [Supports only MetaMask Wallet for now] and start trading. metamusik will feature listings of all of the different kinds of NFTs such as art, collectibles, domain names, music, photography, sports trading cards... etc.
 
-By using MetaRealFights, you will normally be given a chance to buy or sell NFT either at a fixed price or as a kind of auction [auctions will be available in the next release]. If you’ve purchased an NFT, it basically means that you have exclusive ownership of this unique digital asset and you have the ability to resell it again.
+By using metamusik, you will normally be given a chance to buy or sell NFT either at a fixed price or as a kind of auction [auctions will be available in the next release]. If you’ve purchased an NFT, it basically means that you have exclusive ownership of this unique digital asset and you have the ability to resell it again.
 
 ## Requirements
 

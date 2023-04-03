@@ -14,7 +14,7 @@ function ActivityPage() {
     return (
         <>
             {userCtx.userIsLoading && <FullScreenLoader heading='Loading' />}
-            <PageBanner heading='Activity & Transactions' />
+            <PageBanner heading='Activité et transactions' />
             <section className='py-5'>
                 <div className='container py-5' data-aos='fade-up' data-aos-delay='100'>
                     {/* ACTIVITES */}
@@ -22,9 +22,9 @@ function ActivityPage() {
                         <header className='mb-4'>
                             <div className='row'>
                                 <div className='col-lg-7'>
-                                    <h2 className='mb-2'>Activities</h2>
+                                    <h2 className='mb-2'>Activités</h2>
                                     <p className='text-muted lead'>
-                                        Find out what happened in the MetaRealFights world today.
+                                    Découvrez ce qui s'est passé dans le monde de la métamusique aujourd'hui.
                                     </p>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ function ActivityPage() {
                         <div className='row'>
                             <div className='col-lg-7'>
                                 <h2 className='mb-2'>Transactions</h2>
-                                <p className='text-muted lead'>The latest transactions</p>
+                                <p className='text-muted lead'>Les dernières transactions</p>
                             </div>
                         </div>
                     </header>

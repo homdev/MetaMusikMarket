@@ -106,9 +106,9 @@ function PromoteNft() {
                         <div className='card-body p-4'>
                             <div className='row mb-4'>
                                 <div className='col-lg-6'>
-                                    <h5>Set a promotion price</h5>
+                                    <h5>Fixer un prix promotionnel</h5>
                                     <p className='text-muted mb-0'>
-                                        The amount that user would pay to promote their NFTs
+                                    Le montant que l'utilisateur paierait pour promouvoir ses NFT
                                     </p>
                                 </div>
                                 <div className='col-lg-6 text-lg-end'>
@@ -133,11 +133,11 @@ function PromoteNft() {
                                         step='0.0001'
                                         value={promotionPrice}
                                         onChange={(e) => setPromotionPrice(e.target.value)}
-                                        placeholder={`e.g. add promotion price with ${settings.currency}`}
+                                        placeholder={`e.g. ajouter un prix promotionnel avec ${settings.currency}`}
                                     />
                                 </div>
                                 <button className='btn btn-primary mb-3 w-100 py-2' type='submit'>
-                                    <i className='lab la-ethereum me-2'></i>Set promotion price
+                                    <i className='lab la-ethereum me-2'></i>Fixer le prix de la promotion
                                 </button>
                             </form>
                         </div>
@@ -147,7 +147,7 @@ function PromoteNft() {
                 <div className='col-lg-12' data-aos='fade-right' data-aos-delay='200'>
                     <div className='card shadow-0 p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>Promoted NFTs</h5>
+                            <h5 className='mb-4'>NFT promus</h5>
                             <PromotedNftsTable unpromote={unpromoteNFTHandler} />
                         </div>
                     </div>
@@ -156,7 +156,7 @@ function PromoteNft() {
                 <div className='col-lg-12' data-aos='fade-right' data-aos-delay='200'>
                     <div className='card shadow-0 p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5 className='mb-4'>Promoted Auctions</h5>
+                            <h5 className='mb-4'>Enchères promues</h5>
                             <PromotedAuctionsTable unpromote={unpromoteNFTHandler} />
                         </div>
                     </div>

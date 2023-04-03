@@ -1,20 +1,20 @@
 export const categoryOptions = [
     { label: 'Art', value: 'art', icon: 'las la-palette' },
-    { label: 'Music', value: 'music', icon: 'las la-music' },
-    { label: 'Game', value: 'game', icon: 'las la-gamepad' },
+    { label: 'Musique', value: 'music', icon: 'las la-music' },
+    { label: 'Jeu', value: 'game', icon: 'las la-gamepad' },
     { label: 'Memes', value: 'memes', icon: 'las la-frog' },
-    { label: 'Trading Cards', value: 'trendingCards', icon: 'las la-mail-bulk' },
-    { label: 'Collectibles', value: 'collectibles', icon: 'las la-boxes' },
+    { label: 'Cartes NFT', value: 'trendingCards', icon: 'las la-mail-bulk' },
+    { label: 'Objets de collection', value: 'collectibles', icon: 'las la-boxes' },
 ];
 
 export const categorySelectBox = [
     { label: 'All', value: 'all' },
     { label: 'Art', value: 'art' },
-    { label: 'Music', value: 'music' },
-    { label: 'Game', value: 'game' },
+    { label: 'Musique', value: 'music' },
+    { label: 'Jeu', value: 'game' },
     { label: 'Memes', value: 'memes' },
-    { label: 'Trading Cards', value: 'trendingCards' },
-    { label: 'Collectibles', value: 'collectibles' },
+    { label: 'Cartes NFT', value: 'trendingCards' },
+    { label: 'Objets de collection', value: 'collectibles' },
 ];
 
 export const particlesOptions = {

@@ -164,28 +164,28 @@ function AuctionItem({
 
     const Completionist = () => (
         <div className='text-center p-4 rounded-lg bg-light mt-4'>
-            <h6 className='text-center mb-0 fw-bold text-uppercase letter-spacing-0'>Auction Ended</h6>
+            <h6 className='text-center mb-0 fw-bold text-uppercase letter-spacing-0'>Enchères terminées</h6>
             {web3Ctx.account === topBidder && topBid > 0 && (
                 <>
-                    <p className='text-muted mb-2 text-center'>Great! you win the auction.</p>
+                    <p className='text-muted mb-2 text-center'>Super ! Vous remportez l'enchère.</p>
                     <button className='btn btn-primary btn-sm py-2 px-4' type='button' onClick={claimNFTHandler}>
-                        <span className='lh-reset'>Claim your NFT</span>
+                        <span className='lh-reset'>Réclamez votre NFT</span>
                     </button>
                 </>
             )}
 
             {topBid === 0 && web3Ctx.account === user && (
                 <>
-                    <p className='text-muted mb-2 text-center'>No one was interested.</p>
+                    <p className='text-muted mb-2 text-center'>Personne n'était intéressé.</p>
                     <button className='btn btn-primary btn-sm py-2 px-4' type='button' onClick={cancelHandler}>
-                        <span className='lh-reset'>Restore your NFT</span>
+                        <span className='lh-reset'>Rétablissez votre NFT</span>
                     </button>
                 </>
             )}
 
             {topBid > 0 && web3Ctx.account === user && (
                 <>
-                    <p className='text-muted mb-2 text-center'>This NFT has another owner now, it's no longer yours</p>
+                    <p className='text-muted mb-2 text-center'>Ce NFT a un autre propriétaire, il n'est plus le vôtre.</p>
                 </>
             )}
         </div>
@@ -200,19 +200,19 @@ function AuctionItem({
                 <div className='countdown rounded-lg bg-light mt-4 mb-5'>
                     <div className='countdown-item flex-fill'>
                         <div className='countdown-item-number bg-white w-100'>{days}</div>
-                        <span>Days</span>
+                        <span>Jours</span>
                     </div>
                     <div className='countdown-item flex-fill'>
                         <div className='countdown-item-number bg-white w-100'>{hours}</div>
-                        <span>Hours</span>
+                        <span>Heures</span>
                     </div>
                     <div className='countdown-item flex-fill'>
                         <div className='countdown-item-number bg-white w-100'>{minutes}</div>
-                        <span>Mins</span>
+                        <span>Minutes</span>
                     </div>
                     <div className='countdown-item flex-fill'>
                         <div className='countdown-item-number bg-white w-100'>{seconds}</div>
-                        <span>Secs</span>
+                        <span>Secondes</span>
                     </div>
                 </div>
             );
@@ -459,7 +459,7 @@ function AuctionItem({
                             </Link>
                             <div className='ms-2'>
                                 <p className='text-muted fw-normal mb-0 lh-1'>
-                                    <span className='text-xs'>Owned By</span>
+                                    <span className='text-xs'>Détenu par</span>
                                     <strong className='d-block fw-bold h6 text-dark mb-0'>
                                         <Link className='text-reset' to={`/users/${user}`}>
                                             {truncateStart(ownerName, 10)}
@@ -470,16 +470,16 @@ function AuctionItem({
                         </div>
 
                         <p className='text-muted fw-normal mb-0 lh-1'>
-                            <span className='text-xs'>Highest Bid</span>
+                            <span className='text-xs'>L'offre la plus élevée</span>
                             {index !== -1 ? (
                                 <strong className='d-block fw-bold lead text-dark h2 mb-0'>
                                     {topBid > 0 ? formatPrice(topBid).toFixed(3) : 0}{' '}
                                     <span className='text-sm'> {settings.currency}</span>
                                 </strong>
                             ) : owner === web3Ctx.account ? (
-                                <strong className='d-block fw-bold lead text-dark h2 mb-0'>Not Set</strong>
+                                <strong className='d-block fw-bold lead text-dark h2 mb-0'>Non défini</strong>
                             ) : (
-                                <strong className='d-block fw-bold lead text-dark h2 mb-0'>Not Set</strong>
+                                <strong className='d-block fw-bold lead text-dark h2 mb-0'>Non défini</strong>
                             )}
                         </p>
                     </div>
@@ -488,12 +488,12 @@ function AuctionItem({
                             <>
                                 <div className='card-ribbon top-0 mt-4 pt-2'>
                                     {auctionEnded !== true ? (
-                                        <span className='bg-danger px-2 py-1 rounded-sm'>Open for Bids</span>
+                                        <span className='bg-danger px-2 py-1 rounded-sm'>Appel d'offres</span>
                                     ) : (
-                                        <span className='bg-danger px-2 py-1 rounded-sm'>Not For Sale</span>
+                                        <span className='bg-danger px-2 py-1 rounded-sm'>Pas à vendre</span>
                                     )}
                                     {unlockable !== '' && (
-                                        <span className='px-2 py-1 rounded-sm bg-dark text-white ms-1'>Unlockable</span>
+                                        <span className='px-2 py-1 rounded-sm bg-dark text-white ms-1'>Déverrouillable</span>
                                     )}
                                 </div>
                                 <div className='card-action'>
@@ -511,7 +511,7 @@ function AuctionItem({
                                                             }}
                                                         >
                                                             <i className='lab la-ethereum me-2'></i>
-                                                            Place Bid
+                                                            Placez l'offre
                                                         </button>
                                                     )}
                                                     {isCurrentBidder === true && (
@@ -522,7 +522,7 @@ function AuctionItem({
                                                             onClick={withdrawBidHandler}
                                                         >
                                                             <i className='lab la-ethereum me-2'></i>
-                                                            Withdraw Bid
+                                                            Retrait de l'offre
                                                         </button>
                                                     )}
                                                 </>
@@ -535,7 +535,7 @@ function AuctionItem({
                                                             to='/register'
                                                         >
                                                             <i className='las la-user me-2'></i>
-                                                            Register to Bid
+                                                            S'inscrire à l'appel d'offres
                                                         </Link>
                                                     )}
                                                 </>
@@ -564,12 +564,12 @@ function AuctionItem({
                                                 onChange={(e) => setBidPrice(e.target.value)}
                                             />
                                             <button type='submit' className='btn btn-primary w-100 rounded-sm mb-2'>
-                                                Place Bid
+                                            Placez l'offre
                                             </button>
                                             <p className='mb-0 text-center text-muted'>
-                                                You'll find your funds into{' '}
-                                                <span className='text-primary'>My Account</span> page if you havn't won
-                                                this auction
+                                            Vous trouverez vos fonds dans{' '}
+                                                <span className='text-primary'>Mon compte</span> page si vous n'avez pas gagné
+                                                cette enchère
                                             </p>
                                         </form>
                                     </div>
@@ -585,7 +585,7 @@ function AuctionItem({
                                             className='btn btn-danger text-nowrap'
                                             onClick={cancelHandler}
                                         >
-                                            Cancel Auction
+                                            Annuler l'enchère
                                         </button>
                                     </div>
                                 )}
@@ -594,9 +594,9 @@ function AuctionItem({
                     ) : (
                         <>
                             <div className='card-ribbon top-0 mt-4 pt-2'>
-                                <span className='bg-danger px-2 py-1 rounded-sm'>Not for sale</span>{' '}
+                                <span className='bg-danger px-2 py-1 rounded-sm'>Pas à vendre</span>{' '}
                                 {unlockable !== '' && (
-                                    <span className='px-2 py-1 rounded-sm bg-dark text-white ms-1'>Unlockable</span>
+                                    <span className='px-2 py-1 rounded-sm bg-dark text-white ms-1'>Déverrouillable</span>
                                 )}
                             </div>
                         </>
@@ -608,7 +608,7 @@ function AuctionItem({
                         <p className='mb-0 text-xs d-flex align-items-center'>
                             <i className='las la-percentage me-1'></i>
                             <span className='me-1 text-primary'>{royalties}%</span>
-                            Royalties
+                            Redevances
                         </p>
                         <p className='text-xs mb-0 d-flex align-items-center'>
                             <i className='la-sm text-primary las la-clock mx-1 text-primary'></i>

@@ -181,7 +181,7 @@ function PromotedAuctionsTable({ unpromote }) {
                                 setSelectedNfts([]);
                             }}
                         >
-                            Unpromote Selected
+                            Dépromouvoir la sélection
                         </button>
                     )}
                 </>

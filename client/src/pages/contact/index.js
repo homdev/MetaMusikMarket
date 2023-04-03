@@ -11,19 +11,19 @@ function ContactPage() {
     //      CHANGE PAGE TITLE
     /*** ---------------------------------------- */
     useEffect(() => {
-        document.title = `Contact Us | ${settings.UISettings.marketplaceBrandName}`;
+        document.title = `Nous contacter | ${settings.UISettings.marketplaceBrandName}`;
     });
 
     return (
         <>
-            <PageBanner heading={'Contact Us'} />
+            <PageBanner heading={'Nous contacter'} />
             <section className='py-5'>
                 <div className='container py-5'>
                     <div className='row g-5'>
                         <ContactInfo gridWidth='col-lg-8 mx-auto' />
                         <ContactForm gridWidth='col-lg-8 mx-auto' />
                         <div className='col-12 text-center'>
-                            <h2 className='h3 mb-1'>We are social</h2>
+                            <h2 className='h3 mb-1'>Nous sommes sociaux</h2>
                             <p className='small text-muted mb-3'>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis repudiandae cumque
                                 architecto.

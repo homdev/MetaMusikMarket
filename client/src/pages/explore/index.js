@@ -149,11 +149,11 @@ function ExplorePage() {
 
     return (
         <>
-            {auctionCtx.fetchingLoading ? <FullScreenLoader heading='Updating NFTs' /> : null}
-            {marketplaceCtx.mktIsLoading ? <FullScreenLoader heading='Fetching NFTs' /> : null}
+            {auctionCtx.fetchingLoading ? <FullScreenLoader heading='Mise à jour des NFT' /> : null}
+            {marketplaceCtx.mktIsLoading ? <FullScreenLoader heading='Récupération des NFT' /> : null}
             {collectionCtx.nftTransactionLoading ? <MetaMaskLoader /> : null}
             {auctionCtx.auctionTransactionLoading ? <MetaMaskLoader /> : null}
-            <PageBanner heading={'Explore All NFTs'} />
+            <PageBanner heading={'Explorer tous les NFT'} />
             <section className='py-5'>
                 {/* FILTER CONTROLS */}
                 <div className='container pt-5'>
@@ -161,7 +161,7 @@ function ExplorePage() {
                         <header className='mb-2'>
                             <ul className='list-inline mb-0'>
                                 <li className='list-inline-item mb-3 me-3'>
-                                    <p className='text-sm fw-bold pe-lg-4 mb-3'>Filter by Category</p>
+                                    <p className='text-sm fw-bold pe-lg-4 mb-3'>Filtrer par catégorie</p>
                                     <div className='input-icon flex-nowrap category-select'>
                                         <div className='input-icon-text bg-none'>
                                             <i className='las la-icons text-primary z-index-20'></i>
@@ -178,7 +178,7 @@ function ExplorePage() {
                                     </div>
                                 </li>
                                 <li className='list-inline-item mb-3 me-3'>
-                                    <p className='text-sm fw-bold pe-lg-4 mb-3'>Filter by Price</p>
+                                    <p className='text-sm fw-bold pe-lg-4 mb-3'>Filtrer par prix</p>
                                     <div className='input-icon flex-nowrap category-select'>
                                         <div className='input-icon-text bg-none'>
                                             <i className='lab la-ethereum text-primary z-index-20'></i>
@@ -195,7 +195,7 @@ function ExplorePage() {
                                     </div>
                                 </li>
                                 <li className='list-inline-item mb-3'>
-                                    <p className='text-sm fw-bold pe-lg-4 mb-3'>Sort By</p>
+                                    <p className='text-sm fw-bold pe-lg-4 mb-3'>Trier par</p>
                                     <div className='input-icon flex-nowrap category-select'>
                                         <div className='input-icon-text bg-none'>
                                             <i className='lab la-ethereum text-primary z-index-20'></i>
@@ -233,7 +233,7 @@ function ExplorePage() {
                                         type='button'
                                         onClick={() => setRenderedItems(renderedItems + 3)}
                                     >
-                                        Load More
+                                        En savoir plus
                                     </button>
                                 </div>
                             )}
@@ -241,10 +241,10 @@ function ExplorePage() {
                     ) : (
                         <>
                             <div className='text-center'>
-                                <h4 className='text-center'>There're no NFTs at the moment</h4>
-                                <p className='text-muted mb-3'>Once you've created an NFT we'll render it here</p>
+                                <h4 className='text-center'>Il n'y a pas de NFT pour le moment</h4>
+                                <p className='text-muted mb-3'>Une fois que vous avez créé un NFT, nous le rendrons ici.</p>
                                 <Link className='btn btn-gradient-primary mb-5' to='/mint'>
-                                    Create NFT
+                                    Créer un NFT
                                 </Link>
                             </div>
                         </>
@@ -253,7 +253,7 @@ function ExplorePage() {
                     {collectionCtx.collection.length !== 0 &&
                         collectionCtx.totalSupply !== '0' &&
                         updatedExploreItems.length === 0 && (
-                            <h4 className='text-center'>There're no NFTs match your filter</h4>
+                            <h4 className='text-center'>Aucun NFT ne correspond à votre filtre</h4>
                         )}
                 </div>
             </section>

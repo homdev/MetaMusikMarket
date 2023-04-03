@@ -42,8 +42,8 @@ function Preloader() {
                         </defs>
                     </svg>
                     <div className='text-center'>
-                        <p className='h4 mb-0'>Please wait</p>
-                        <p className='text-sm text-muted mb-0'>We're loading our awesome stuff...</p>
+                        <p className='h4 mb-0'>Veuillez patienter</p>
+                        <p className='text-sm text-muted mb-0'>Nous chargeons nos superbes produits...</p>
                     </div>
                 </div>
             </div>

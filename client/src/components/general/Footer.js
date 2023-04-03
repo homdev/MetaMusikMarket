@@ -21,7 +21,7 @@ function Footer() {
                                     ? settings.UISettings.logo
                                     : settings.UISettings.logoLight
                             }
-                            alt='MetaRealFights'
+                            alt='metamusik'
                             className='mb-3'
                             width='140'
                         />
@@ -32,35 +32,35 @@ function Footer() {
                             target='_black'
                             rel='noopener noreferrer'
                         >
-                            <span className='lh-reset px-3 pt-2'>Download MRF</span>
+                            <span className='lh-reset px-3 pt-2'>Télécharger le MRF</span>
                         </a>
                     </div>
                     <div className='col-lg-3 col-md-6 mb-lg-0 pt-2'>
-                        <h5 className='mb-4'>MetaRealFights</h5>
+                        <h5 className='mb-4'>metamusik</h5>
                         <ul className='list-unstyled text-muted mb-0'>
                             <li className='mb-2'>
                                 <Link className='text-reset' to='/'>
-                                    Home
+                                Accueil
                                 </Link>
                             </li>
                             <li className='mb-2'>
                                 <Link className='text-reset' to='/mint'>
-                                    Create NFT
+                                Créer un NFT
                                 </Link>
                             </li>
                             <li className='mb-2'>
                                 <Link className='text-reset' to='/activity'>
-                                    Activity
+                                Activité
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div className='col-lg-3 col-md-6 mb-lg-0 pt-2'>
-                        <h5 className='mb-4'>Community</h5>
+                        <h5 className='mb-4'>Communauté</h5>
                         <ul className='list-unstyled text-muted mb-0'>
                             <li className='mb-2'>
                                 <Link className='text-reset' to='/contact'>
-                                    Contact
+                                Contact
                                 </Link>
                             </li>
                             <li className='mb-2'>
@@ -70,7 +70,7 @@ function Footer() {
                             </li>
                             <li className='mb-2'>
                                 <Link className='text-reset' to='/sellers'>
-                                    Sellers
+                                Vendeurs
                                 </Link>
                             </li>
                         </ul>
@@ -87,7 +87,7 @@ function Footer() {
                                     type='email'
                                     name='email'
                                     autoComplete='off'
-                                    placeholder='Enter your email address...'
+                                    placeholder='Saisissez votre adresse électronique...'
                                 />
                                 <button
                                     className='btn btn-primary rounded-circle btn-sm shadow-0 m-2 icon-md'
@@ -98,7 +98,7 @@ function Footer() {
                             </div>
                         </form>
                         {state.succeeded ? (
-                            <p className='bg-primary text-white mt-1 px-3 py-1 rounded-sm'>Thanks!</p>
+                            <p className='bg-primary text-white mt-1 px-3 py-1 rounded-sm'>Merci de votre attention !</p>
                         ) : null}
                     </div>
                 </div>
@@ -111,7 +111,7 @@ function Footer() {
             <div className='container py-4 z-index-20'>
                 <div className='row text-center'>
                     <p className='text-muted text-sm mb-0'>
-                        © {new Date().getFullYear()} All rights reserved. Crafted by{' '}
+                        © {new Date().getFullYear()} Tous droits réservés. Fabriqué par{' '}
                         <a
                             className='text-primary'
                             href='https:// .com/'

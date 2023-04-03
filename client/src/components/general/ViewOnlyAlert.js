@@ -37,12 +37,12 @@ function ViewOnlyAlert() {
                             <img src='/images/metamask.png' alt='Metamask' className='flex-shrink-0' width='40' />
                             <div className='ms-3'>
                                 <h5 className='mb-0'>
-                                    You're on view only mode, Please connect to{' '}
+                                Vous êtes en mode visualisation uniquement, veuillez vous connecter à{' '}
                                     <span className='text-primary'>{settings.UISettings.usedNetworkName}</span>
                                 </h5>
                                 <p className='text-muted mb-0'>
-                                    We notice that there's no connected MataMask wallet, please install it and connect
-                                    to {settings.UISettings.usedNetworkName} and reload the app
+                                We notice that there's no connected MataMask wallet, please install it and connect
+                                    to {settings.UISettings.usedNetworkName} et rechargez l'application
                                 </p>
                             </div>
                             <div className='ms-auto'>
@@ -52,7 +52,7 @@ function ViewOnlyAlert() {
                                     rel='noreferrer'
                                     target='_blank noopener'
                                 >
-                                    Setup Wallet
+                                    Mise en place du portefeuille
                                 </a>
                             </div>
                         </div>
@@ -60,9 +60,9 @@ function ViewOnlyAlert() {
                         <div className='d-flex align-items-center'>
                             <img src='/images/metamask.png' alt='Metamask' className='flex-shrink-0' width='40' />
                             <div className='ms-3'>
-                                <h6 className='mb-0'>Open in MetaMask App</h6>
+                                <h6 className='mb-0'>Ouvrir dans l'application MetaMask</h6>
                                 <p className='text-muted mb-0 small'>
-                                    Open in Metamask mobile app browser and switch network to{' '}
+                                Ouvrez le navigateur de l'application mobile Metamask et basculez le réseau sur{' '}
                                     {settings.UISettings.usedNetworkName}
                                 </p>
                             </div>

@@ -186,7 +186,7 @@ function NFTSinglePage() {
     //      CHANGE PAGE TITLE
     /*** ------------------------------------------ */
     useEffect(() => {
-        document.title = `${currentAsset.length > 0 ? currentAsset[0].title : 'NFT Item'} | MetaRealFights NFT`;
+        document.title = `${currentAsset.length > 0 ? currentAsset[0].title : 'NFT Item'} | metamusik NFT`;
     }, [currentAsset, id]);
 
     /*** ------------------------------------------ */
@@ -471,10 +471,10 @@ function NFTSinglePage() {
                         <p className='mb-0 fw-bold' style={{ fontSize: '10rem' }}>
                             404
                         </p>
-                        <h1 className='h2 text-uppercase'>Not Found</h1>
-                        <p className='text-muted'>This page is not found, return to Home page</p>
+                        <h1 className='h2 text-uppercase'>Non trouvé</h1>
+                        <p className='text-muted'>Cette page n'a pas été trouvée, retournez à la page d'accueil</p>
                         <Link to='/' className='btn btn-gradient-primary'>
-                            Homepage
+                            Page d'accueil
                         </Link>
                     </div>
                 </div>
@@ -490,8 +490,8 @@ function NFTSinglePage() {
             <section className='pt-5 bg-light'>
                 {nftData && nftData.length === 0 ? (
                     <div className='py-5 text-center mt-5 mb-3'>
-                        <h1 className='h2 mt-5'>Fetching item details</h1>
-                        <p className='text-muted'>Please wait until we prepare your data.</p>
+                        <h1 className='h2 mt-5'>Récupération des détails de l'article</h1>
+                        <p className='text-muted'>Veuillez patienter jusqu'à ce que nous préparions vos données.</p>
                         <Loader />
                     </div>
                 ) : (
@@ -525,7 +525,7 @@ function NFTSinglePage() {
                                                 By
                                                 <strong className='fw-bold lh-1 ms-2 lead text-dark'>
                                                     <Link className='text-reset' to={`/users/${asset.creator}`}>
-                                                        {creatorName && creatorName !== '' ? creatorName : 'Adi Gallia'}
+                                                        {creatorName && creatorName !== '' ? creatorName : 'MetaMusik'}
                                                     </Link>
                                                 </strong>
                                             </div>
@@ -534,7 +534,7 @@ function NFTSinglePage() {
                                         {!asset.isApproved && (
                                             <div className='d-inline-block rounded-sm px-3 mb-4 py-1 bg-danger text-white'>
                                                 <div className='d-flex align-items-center'>
-                                                    This item waiting for admin approval
+                                                    Cet article est en attente de l'approbation de l'administrateur
                                                 </div>
                                             </div>
                                         )}
@@ -571,7 +571,7 @@ function NFTSinglePage() {
                                                             }`}
                                                             onClick={() => setHistoryType('prices')}
                                                         >
-                                                            <span className='lh-reset'>Price Log</span>
+                                                            <span className='lh-reset'>Registre des prix</span>
                                                         </button>
                                                     </div>
                                                     {historyType === 'transactions' && (
@@ -621,7 +621,7 @@ function NFTSinglePage() {
                                                             target='_blank'
                                                             rel='noopener noreferrer'
                                                         >
-                                                            <i className='las la-cloud me-2'></i> Download Content
+                                                            <i className='las la-cloud me-2'></i> Télécharger le contenu
                                                         </a>
                                                     </div>
                                                 </div>
@@ -642,7 +642,7 @@ function NFTSinglePage() {
                                                 <div className='gy-4 my-4'>
                                                     {price ? (
                                                         <>
-                                                            <h6 className='mb-3'>Current Price</h6>
+                                                            <h6 className='mb-3'>Prix actuel</h6>
                                                             <div className='text-sm text-muted fw-normal mb-0 d-flex align-items-center'>
                                                                 <span className='icon bg-primary text-white me-2 mb-1'>
                                                                     <i className='lab la-ethereum fa-fw'></i>
@@ -656,7 +656,7 @@ function NFTSinglePage() {
                                                         <div className='d-inline-block'>
                                                             <p className='text-muted mb-0 d-flex align-items-center bg-gray-200 rounded py-2 px-3'>
                                                                 <i className='lab la-ethereum text-dark me-2'></i>
-                                                                This item is not for sale!
+                                                                Cet article n'est pas à vendre !
                                                             </p>
                                                         </div>
                                                     )}
@@ -673,7 +673,7 @@ function NFTSinglePage() {
                                                                 onClick={buyHandler}
                                                             >
                                                                 <i className='lab la-ethereum me-2'></i>
-                                                                Purchase NFT
+                                                                Achat NFT
                                                             </button>
                                                         ) : (
                                                             <>
@@ -684,7 +684,7 @@ function NFTSinglePage() {
                                                                             className='btn btn-primary'
                                                                         >
                                                                             <i className='las la-user me-2'></i>
-                                                                            Register to Buy
+                                                                            S'inscrire pour acheter
                                                                         </Link>
                                                                     )}
                                                             </>
@@ -695,7 +695,7 @@ function NFTSinglePage() {
                                                             className='btn btn-danger px-5'
                                                             onClick={cancelHandler}
                                                         >
-                                                            Unlist NFT from sale
+                                                            Supprimer la liste des NFT de la vente
                                                         </button>
                                                     )
                                                 ) : asset.owner === web3Ctx.account ? (
@@ -707,7 +707,7 @@ function NFTSinglePage() {
                                                                 setIsModalOpen(true);
                                                             }}
                                                         >
-                                                            Create Sale
+                                                            Créer une vente
                                                         </button>
                                                         <Modal
                                                             status={isModalOpen}
@@ -716,15 +716,15 @@ function NFTSinglePage() {
                                                             layout={{ width: '500px', maxWidth: '100%' }}
                                                         >
                                                             <div className='card-body text-center p-lg-5'>
-                                                                <h4 className='mb-1'>List NFT for Sale</h4>
+                                                                <h4 className='mb-1'>Liste des NFT à vendre</h4>
                                                                 {saleType === 'fixedPrice' && (
                                                                     <p className='text-muted mb-4'>
-                                                                        Add price to your NFT with {settings.currency}
+                                                                        Ajoutez un prix à votre NFT avec {settings.currency}
                                                                     </p>
                                                                 )}
                                                                 {saleType === 'auction' && (
                                                                     <p className='text-muted mb-4'>
-                                                                        Add Auction end date
+                                                                        Ajouter la date de fin de l'enchère
                                                                     </p>
                                                                 )}
 
@@ -735,14 +735,14 @@ function NFTSinglePage() {
                                                                             type='button'
                                                                             onClick={() => setSaleType('fixedPrice')}
                                                                         >
-                                                                            Fixed Price
+                                                                            Prix fixe
                                                                         </button>
                                                                         <button
                                                                             className='btn btn-info m-1 w-100'
                                                                             type='button'
                                                                             onClick={() => setSaleType('auction')}
                                                                         >
-                                                                            Open For Bids
+                                                                            Appel d'offres
                                                                         </button>
                                                                     </div>
                                                                 )}
@@ -769,10 +769,10 @@ function NFTSinglePage() {
                                                                             type='submit'
                                                                             className='btn btn-primary w-100 rounded-sm mb-3'
                                                                         >
-                                                                            Create sale
+                                                                            Créer une vente
                                                                         </button>
                                                                         <p className='mb-0 text-center text-muted'>
-                                                                            You'll get
+                                                                            Vous obtiendrez
                                                                             <span className='text-primary fw-normal mx-1'>
                                                                                 {offerPrice
                                                                                     ? (
@@ -783,8 +783,7 @@ function NFTSinglePage() {
                                                                                       ).toFixed(4)
                                                                                     : 0}
                                                                             </span>
-                                                                            {settings.currency} after marketplace
-                                                                            commission
+                                                                            {settings.currency} Après la commission
                                                                         </p>
                                                                     </form>
                                                                 )}
@@ -798,7 +797,7 @@ function NFTSinglePage() {
                                                                         <div className='row gy-3 text-start'>
                                                                             <div className='col-12'>
                                                                                 <label className='form-label text-start fw-bold'>
-                                                                                    Auction Ends At
+                                                                                    La vente aux enchères se termine le
                                                                                 </label>
                                                                                 <input
                                                                                     className='form-control'
@@ -815,7 +814,7 @@ function NFTSinglePage() {
                                                                                     type='submit'
                                                                                     className='btn btn-primary w-100 rounded-sm mb-2'
                                                                                 >
-                                                                                    Create sale
+                                                                                    Créer une vente
                                                                                 </button>
                                                                             </div>
                                                                         </div>
@@ -841,7 +840,7 @@ function NFTSinglePage() {
                             <div className='row'>
                                 <div className='col-lg-6'>
                                     <h2 data-aos='fade-right' data-aos-delay='100' data-aos-once='true'>
-                                        Similar from this category
+                                        Similaires à cette catégorie
                                     </h2>
                                     <p
                                         className='text-muted lead mb-0'

@@ -37,7 +37,7 @@ function AuthorsPage({ sellers }) {
     //      CHANGE PAGE TITLE
     /*** -------------------------------------------- */
     useEffect(() => {
-        document.title = `All Sellers | ${settings.UISettings.marketplaceBrandName}`;
+        document.title = `Tous les vendeurs | ${settings.UISettings.marketplaceBrandName}`;
     }, []);
 
     /*** -------------------------------------------- */
@@ -135,7 +135,7 @@ function AuthorsPage({ sellers }) {
     return (
         <>
             {marketplaceCtx.mktIsLoading ? <FullScreenLoader heading='loading' /> : null}
-            <PageBanner heading={'All Sellers'} />
+            <PageBanner heading={'Tous les vendeurs'} />
 
             <section className='py-5'>
                 <div className='container py-5'>
@@ -143,12 +143,12 @@ function AuthorsPage({ sellers }) {
                         <div className='row gy-4 mb-5 align-items-stretch'>{renderSellers}</div>
                     ) : (
                         <div className='text-center'>
-                            <h4 className='text-center'>There're no sellers at the moment</h4>
+                            <h4 className='text-center'>Il n'y a pas de vendeurs pour le moment</h4>
                             <p className='text-muted mb-3'>
-                                Once there'll be selling actions we'll render sellers here
+                            Dès qu'il y aura des actions de vente, nous rendrons les vendeurs ici.
                             </p>
                             <Link className='btn btn-gradient-primary mb-5' to='/'>
-                                Return Home
+                            Retour à l'accueil
                             </Link>
                         </div>
                     )}

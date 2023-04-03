@@ -33,7 +33,7 @@ function AuctionCta({ topBid, isCurrentBidder, setIsModalOpen, cancelHandler, wi
         <>
             {topBid > 0 ? (
                 <div className='d-inline-block mt-4'>
-                    <h6 className='mb-3'>Top Bid</h6>
+                    <h6 className='mb-3'>Enchère supérieure</h6>
                     <div className='text-sm text-muted fw-normal mb-0 d-flex align-items-center'>
                         <span className='icon bg-primary text-white me-2 mb-1'>
                             <i className='lab la-ethereum fa-fw'></i>
@@ -47,7 +47,7 @@ function AuctionCta({ topBid, isCurrentBidder, setIsModalOpen, cancelHandler, wi
                 <div className='d-inline-block mt-4'>
                     <p className='text-muted mb-0 d-flex align-items-center bg-gray-200 rounded p-3'>
                         <i className='lab la-ethereum text-dark me-2 mb-1'></i>
-                        <span className='lh-reset'>There's no active bids</span>
+                        <span className='lh-reset'>Il n'y a pas d'offres actives</span>
                     </p>
                 </div>
             )}
@@ -65,7 +65,7 @@ function AuctionCta({ topBid, isCurrentBidder, setIsModalOpen, cancelHandler, wi
                                     }}
                                 >
                                     <i className='lab la-ethereum me-2'></i>
-                                    Place Bid
+                                    Placez l'offre
                                 </button>
                             )}
                             {isCurrentBidder === true && (
@@ -75,7 +75,7 @@ function AuctionCta({ topBid, isCurrentBidder, setIsModalOpen, cancelHandler, wi
                                     onClick={withdrawBidHandler}
                                 >
                                     <i className='lab la-ethereum me-2'></i>
-                                    Withdraw Bid
+                                    Retrait de l'offre
                                 </button>
                             )}
                         </div>
@@ -84,7 +84,7 @@ function AuctionCta({ topBid, isCurrentBidder, setIsModalOpen, cancelHandler, wi
                             {window.ethereum && networkId === settings.networkId && (
                                 <Link className='btn btn-primary text-nowrap' to='/register'>
                                     <i className='las la-user me-2'></i>
-                                    Register to Bid
+                                    S'inscrire à l'appel d'offres
                                 </Link>
                             )}
                         </>
@@ -95,7 +95,7 @@ function AuctionCta({ topBid, isCurrentBidder, setIsModalOpen, cancelHandler, wi
             {web3Ctx.account === owner && (
                 <div className='mt-4'>
                     <button type='button' className='btn btn-danger text-nowrap' onClick={cancelHandler}>
-                        Cancel Auction
+                    Annuler l'enchère
                     </button>
                 </div>
             )}

@@ -47,7 +47,7 @@ function NFTThumbnail({ thumbnail, type, promote, promotionPrice, owner, isPromo
 
                     {isPromoted && (
                         <div className='position-absolute m-4 top-0 start-0 text-white'>
-                            <span className='bg-primary px-2 py-1 rounded-sm text-sm text-uppercase'>Promoted</span>
+                            <span className='bg-primary px-2 py-1 rounded-sm text-sm text-uppercase'>Promu</span>
                         </div>
                     )}
                 </div>
@@ -56,7 +56,7 @@ function NFTThumbnail({ thumbnail, type, promote, promotionPrice, owner, isPromo
             {parseInt(promotionPrice) > 0 && owner === web3Ctx.account && !isPromoted && eligibleForPromotion && (
                 <div className='mt-4 top-0 start-0 w-100'>
                     <button className='btn btn-primary w-100' type='button' onClick={promote}>
-                        Promote your NFT for {formatPrice(promotionPrice).toFixed(2)} {settings.currency}
+                        Promouvoir votre NFT pour {formatPrice(promotionPrice).toFixed(2)} {settings.currency}
                     </button>
                 </div>
             )}

@@ -238,7 +238,7 @@ function NftTable({ blockNfts }) {
                                 setSelectedNfts([]);
                             }}
                         >
-                            Block Selected
+                            Bloc sélectionné
                         </button>
                     )}
                 </>

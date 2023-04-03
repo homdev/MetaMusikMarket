@@ -191,7 +191,7 @@ function AuctionsTable({ blockAuction }) {
                                 setSelectedNfts([]);
                             }}
                         >
-                            Block Selected
+                            Bloc sélectionné
                         </button>
                     )}
                 </>

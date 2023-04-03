@@ -59,7 +59,7 @@ function AuctionInfoPanel({
                                 <li className='d-flex align-items-center justify-content-between mb-2 pb-1'>
                                     <p className='mb-0 d-flex align-items-center'>
                                         <i className='text-primary las la-user-circle'></i>
-                                        <span className='ms-2'>Item Artist</span>
+                                        <span className='ms-2'>Artiste de l'objet</span>
                                     </p>
                                     <p className='mb-0'>
                                         <a
@@ -75,7 +75,7 @@ function AuctionInfoPanel({
                                 <li className='d-flex align-items-center justify-content-between mb-2 pb-1'>
                                     <p className='mb-0 d-flex align-items-center'>
                                         <i className='text-primary las la-clock'></i>
-                                        <span className='ms-2'>Created at</span>
+                                        <span className='ms-2'>Créé à</span>
                                     </p>
                                     <p className='mb-0'>{new Date(dateCreated).toLocaleDateString('en-US')}</p>
                                 </li>
@@ -83,7 +83,7 @@ function AuctionInfoPanel({
                                     <li className='d-flex align-items-center justify-content-between mb-2 pb-1'>
                                         <p className='mb-0 d-flex align-items-center'>
                                             <i className='text-primary las la-crop-alt'></i>
-                                            <span className='ms-2'>Item Dimensions</span>
+                                            <span className='ms-2'>Dimensions de l'article</span>
                                         </p>
                                         <p className='mb-0'>{imgSize}</p>
                                     </li>
@@ -91,28 +91,28 @@ function AuctionInfoPanel({
                                 <li className='d-flex align-items-center justify-content-between mb-2 pb-1'>
                                     <p className='mb-0 d-flex align-items-center'>
                                         <i className='text-primary las la-icons'></i>
-                                        <span className='ms-2'>Category</span>
+                                        <span className='ms-2'>Catégorie</span>
                                     </p>
                                     <p className='mb-0'>{formatCategory(category)}</p>
                                 </li>
                                 <li className='d-flex align-items-center justify-content-between mb-2 pb-1'>
                                     <p className='mb-0 d-flex align-items-center'>
                                         <i className='text-primary las la-photo-video'></i>
-                                        <span className='ms-2'>Formate</span>
+                                        <span className='ms-2'>Format</span>
                                     </p>
                                     <p className='mb-0'>{formate}</p>
                                 </li>
                                 <li className='d-flex align-items-center justify-content-between mb-2 pb-1'>
                                     <p className='mb-0 d-flex align-items-center'>
                                         <i className='text-primary las la-percentage'></i>
-                                        <span className='ms-2'>Royalties</span>
+                                        <span className='ms-2'>Redevances</span>
                                     </p>
                                     <p className='mb-0'>{royalties}%</p>
                                 </li>
                                 <li className='d-flex align-items-center justify-content-between pb-1'>
                                     <p className='mb-0 d-flex align-items-center'>
                                         <i className='text-primary las la-cloud'></i>
-                                        <span className='ms-2'>Downloaded files</span>
+                                        <span className='ms-2'>Fichiers téléchargés</span>
                                     </p>
                                     <p className='mb-0'>{unlockable !== '' ? 'Yes' : 'No'}</p>
                                 </li>

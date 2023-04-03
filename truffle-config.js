@@ -50,7 +50,7 @@ module.exports = {
                 /* the following line config is
                     new HDWalletProvider(Metamask-secret-passphrase, RPC-URL, index-of-depolyer-account-in-Metamask, i.e. 0 means the first acoount)
                 */
-                new HDWalletProvider(mnemonic, `https://matic-mumbai.chainstacklabs.com`, 0),
+            new HDWalletProvider(mnemonic, `https://matic-mumbai.chainstacklabs.com`, 0),
             network_id: 80001,
             confirmations: 10,
             timeoutBlocks: 2000,

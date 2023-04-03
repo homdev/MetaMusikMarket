@@ -103,7 +103,7 @@ function PendingNftsTable() {
             {collection && (
                 <>
                     <h2 className='h3 mb-4 text-center' data-aos='fade-up' data-aos-delay='600'>
-                        My Pending NFTs
+                    Mes NFT en attente
                     </h2>
                     <DataTable
                         columns={columns}

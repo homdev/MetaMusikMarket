@@ -58,59 +58,59 @@ const columns = [
         cell: (row) =>
             row.type === 'Add User' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-gray-700'>User Registeration</span>
+                    <span className='fw-bold badge lh-reset bg-gray-700'>Enregistrement de l'utilisateur</span>
                 </div>
             ) : row.type === 'Mint NFT Token' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-primary'>Mint NFT Token</span>
+                    <span className='fw-bold badge lh-reset bg-primary'>Jeton NFT à la Monnaie</span>
                 </div>
             ) : row.type === 'Make Offer' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-info'>Add Price</span>
+                    <span className='fw-bold badge lh-reset bg-info'>Ajouter un prix</span>
                 </div>
             ) : row.type === 'Buy NFT' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-success'>Buy NFT</span>
+                    <span className='fw-bold badge lh-reset bg-success'>Acheter NFT</span>
                 </div>
             ) : row.type === 'Claim Funds' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-success'>Collect Profits</span>
+                    <span className='fw-bold badge lh-reset bg-success'>Collecter les bénéfices</span>
                 </div>
             ) : row.type === 'Cancel Offer' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-danger'>Cancel Sale</span>
+                    <span className='fw-bold badge lh-reset bg-danger'>Annuler la vente</span>
                 </div>
             ) : row.type === 'Update User' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-gray-700'>Update Information</span>
+                    <span className='fw-bold badge lh-reset bg-gray-700'>Mise à jour des informations</span>
                 </div>
             ) : row.type === 'Added to Whitelist' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-info'>Add User to Whitelist</span>
+                    <span className='fw-bold badge lh-reset bg-info'>Ajouter un utilisateur à la liste blanche</span>
                 </div>
             ) : row.type === 'Removed from Whitelist' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-danger'>Remove User from Whitelist</span>
+                    <span className='fw-bold badge lh-reset bg-danger'>Supprimer un utilisateur de la liste blanche</span>
                 </div>
             ) : row.type === 'Withdraw' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-danger'>Withdraw Bid</span>
+                    <span className='fw-bold badge lh-reset bg-danger'>Retrait de l'offre</span>
                 </div>
             ) : row.type === 'Create auction' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-info'>Create auction</span>
+                    <span className='fw-bold badge lh-reset bg-info'>Créer une vente aux enchères</span>
                 </div>
             ) : row.type === 'Add Bid' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-info'>Place Bid</span>
+                    <span className='fw-bold badge lh-reset bg-info'>Placez l'offre</span>
                 </div>
             ) : row.type === 'Withdraw from auction' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-danger'>Withdraw Bid</span>
+                    <span className='fw-bold badge lh-reset bg-danger'>Retrait de l'offre</span>
                 </div>
             ) : row.type === 'End auction' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-success'>End auction</span>
+                    <span className='fw-bold badge lh-reset bg-success'>Fin de l'enchère</span>
                 </div>
             ) : (
                 '-'

@@ -129,8 +129,8 @@ function TopSellers({ title, description, topSellers }) {
                     ) : (
                         <div className='col-lg-9'>
                             <NoDataAlert
-                                heading="There're no Sellers at the moment."
-                                subheading='Once someone has successfully sell or buy an asset, sellers calculations will take place.'
+                                heading="Il n'y a pas de vendeurs pour le moment."
+                                subheading="Une fois qu'une personne a réussi à vendre ou à acheter un actif, les calculs des vendeurs sont effectués."
                                 aos='fade-right'
                                 aosDelay='300'
                             />

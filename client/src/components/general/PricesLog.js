@@ -60,7 +60,7 @@ function PricesLog({ history }) {
                                         By
                                         <Link className='text-muted' to={`/users/${item.from.account}`} key={index}>
                                             <strong className='lh-reset text-dark mx-2'>
-                                                {item.from.name === '' ? 'Adi Gallia' : item.from.name}
+                                                {item.from.name === '' ? 'MetaMusik' : item.from.name}
                                             </strong>
                                         </Link>
                                         at {formteFullDate(item.time)}
@@ -71,7 +71,7 @@ function PricesLog({ history }) {
                     })}
 
                     {pricesLog && pricesLog.length === 0 && (
-                        <h6 className='text-center mb-0'>There're no records at the moment</h6>
+                        <h6 className='text-center mb-0'>Il n'y a pas d'enregistrement pour le moment</h6>
                     )}
                 </div>
             </div>

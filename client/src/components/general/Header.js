@@ -170,31 +170,31 @@ function Header({ netId }) {
                 <div className='card-body p-5 text-center'>
                     <div className='py-xl-4'>
                         <p className='h3'>
-                            Congrats! You've earned
+                        Félicitations ! Vous avez gagné
                             <span className='mx-1 text-primary'>
                                 {(marketplaceCtx.userFunds + auctionCtx.userFunds) / 10 ** 18}
                             </span>
                             {settings.currency}
                         </p>
-                        <p className='text-muted lead mb-3'>Your assets have been succesfully made some profits</p>
+                        <p className='text-muted lead mb-3'>Vos actifs ont été rentabilisés avec succès</p>
                         <ul className='list-unstyled mb-0 d-inline-block'>
                             {auctionCtx.userFunds > 0 && (
                                 <li className='mb-2 w-100'>
                                     <button className='btn w-100 btn-gradient-primary' onClick={claimFundsHandler}>
-                                        <span className='lh-reset'>Collect Auctions Profits</span>
+                                        <span className='lh-reset'>Collecter les bénéfices des ventes aux enchères</span>
                                     </button>
                                 </li>
                             )}
                             {marketplaceCtx.userFunds > 0 && (
                                 <li className='mb-2 w-100'>
                                     <button className='btn w-100 btn-gradient-primary' onClick={claimNFTFundsHandler}>
-                                        <span className='lh-reset'>Collect NFTs Profits</span>
+                                        <span className='lh-reset'>Collecter les bénéfices des ENF</span>
                                     </button>
                                 </li>
                             )}
                             <li className='w-100'>
                                 <button className='btn w-100 btn-dark' onClick={closeModalHandler}>
-                                    Keep for now
+                                Garder pour l'instant
                                 </button>
                             </li>
                         </ul>
@@ -233,37 +233,37 @@ function Header({ netId }) {
                         <ul className='navbar-nav mx-auto navbar-nav-centered'>
                             <li className='nav-item'>
                                 <NavLink className='nav-link' to='/' exact>
-                                    Home
+                                Accueil
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
                                 <NavLink className='nav-link' to='/explore'>
-                                    Explore
+                                Explorer
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
                                 <NavLink className='nav-link' to='/auctions'>
-                                    Auctions
+                                Ventes aux enchères
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
                                 <NavLink className='nav-link' to='/activity'>
-                                    Activity
+                                Activité
                                 </NavLink>
                             </li>
                             <li className='nav-item d-block d-xl-none'>
                                 <NavLink className='nav-link' to='/sellers'>
-                                    Sellers
+                                Vendeurs
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
                                 <NavLink className='nav-link' to='/contact'>
-                                    Contact
+                                Contact
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
                                 <NavLink className='nav-link' to='/mint'>
-                                    Mint NFT
+                                Créer un NFT
                                 </NavLink>
                             </li>
                         </ul>
@@ -333,7 +333,7 @@ function Header({ netId }) {
                                                     rel='noopener noreferrer'
                                                 >
                                                     <i className='las la-chart-bar me-2 text-primary'></i>
-                                                    Track transactions
+                                                    Suivre les transactions
                                                 </a>
                                             </li>
                                             <li>
@@ -343,7 +343,7 @@ function Header({ netId }) {
                                                     rel='noopener noreferrer'
                                                 >
                                                     <i className='las la-user-circle me-2 text-primary'></i>
-                                                    My Profile
+                                                    Mon profil
                                                 </Link>
                                             </li>
                                             {userCtx.userIsRegistered && (
@@ -353,7 +353,7 @@ function Header({ netId }) {
                                                     rel='noopener noreferrer'
                                                 >
                                                     <i className='las la-user me-2 text-primary'></i>
-                                                    My Account
+                                                    Mon compte
                                                 </Link>
                                             )}
                                             {(userCtx.appOwner === web3Ctx.account ||
@@ -365,7 +365,7 @@ function Header({ netId }) {
                                                         rel='noopener noreferrer'
                                                     >
                                                         <i className='las la-cog me-2 text-primary'></i>
-                                                        Admin Panel
+                                                        Panneau d'administration
                                                     </Link>
                                                 )}
                                             {marketplaceCtx.userFunds + auctionCtx.userFunds > 0 && !fundsLoading && (
@@ -377,7 +377,7 @@ function Header({ netId }) {
                                                             setIsModalOpen(true);
                                                         }}
                                                     >
-                                                        Collect Profits
+                                                        Collecter les bénéfices
                                                     </button>
                                                 </li>
                                             )}
@@ -387,7 +387,7 @@ function Header({ netId }) {
                                     <li className='nav-item ms-lg-2'>
                                         <Link to='/register' className='btn btn-primary'>
                                             <i className='las la-user me-2'></i>
-                                            Register
+                                            Registre
                                         </Link>
                                     </li>
                                 ))}
@@ -400,7 +400,7 @@ function Header({ netId }) {
                                         onClick={connectWalletHandler}
                                     >
                                         <i className='las la-wallet me-2 mb-2'></i>
-                                        <span className='lh-reset'>Connect wallet</span>
+                                        <span className='lh-reset'>Connecter le portefeuille</span>
                                     </button>
                                 </li>
                             ) : (
@@ -413,7 +413,7 @@ function Header({ netId }) {
                                             ></span>
                                         </div>
 
-                                        <div className='ms-2 fw-bold text-dark pe-3'>Visitor</div>
+                                        <div className='ms-2 fw-bold text-dark pe-3'>Visiteur</div>
                                     </div>
                                 )
                             )}
