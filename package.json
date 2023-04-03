@@ -1,0 +1,26 @@
+{
+    "name": "nftmarketplace",
+    "version": "1.1.0",
+    "description": "",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "",
+    "dependencies": {
+        "@truffle/hdwallet-provider": "^1.4.0",
+        "package": "^1.0.1"
+    },
+    "devDependencies": {
+        "truffle-hdwallet-provider": "^1.0.17"
+    }
+}
