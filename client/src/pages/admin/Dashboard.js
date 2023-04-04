@@ -132,7 +132,7 @@ function Dashboard() {
                 setIsMetaMaskOpened(false);
             })
             .on('receipt', () => {
-                addToast("Cool! vous avez bloquez l'enchère selectionné", {
+                addToast("Cool! vous avez bloquez l'enchère selectionné ", {
                     appearance: 'success',
                 });
                 setIsMetaMaskOpened(false);
