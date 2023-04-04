@@ -242,7 +242,7 @@ function ExplorePage() {
                         <>
                             <div className='text-center'>
                                 <h4 className='text-center'>Il n'y a pas de NFT pour le moment</h4>
-                                <p className='text-muted mb-3'>Une fois que vous avez créé un NFT, nous le rendrons ici.</p>
+                                <p className='text-muted mb-3'>Une fois que vous avez créé un NFT, nous le publierons ici.</p>
                                 <Link className='btn btn-gradient-primary mb-5' to='/mint'>
                                     Créer un NFT
                                 </Link>

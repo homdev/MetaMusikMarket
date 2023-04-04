@@ -85,7 +85,7 @@ function PromotedAuctionsTable({ unpromote }) {
                             {settings.currency}
                         </span>
                     ) : (
-                        'No Bids'
+                        "Pas d'offre"
                     )}
                 </p>
             ),

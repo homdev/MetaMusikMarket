@@ -238,7 +238,7 @@ function NftTable({ blockNfts }) {
                                 setSelectedNfts([]);
                             }}
                         >
-                            Bloc sélectionné
+                            Bloquer le NFT
                         </button>
                     )}
                 </>

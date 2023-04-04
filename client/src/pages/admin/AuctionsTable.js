@@ -45,7 +45,7 @@ function AuctionsTable({ blockAuction }) {
     /*** --------------------------------------------- */
     const columns = [
         {
-            name: 'NFT Title',
+            name: 'Titre',
             selector: (row) => row.title,
             cell: (row) => (
                 <div row={row}>
@@ -77,7 +77,7 @@ function AuctionsTable({ blockAuction }) {
             ),
         },
         {
-            name: 'Top Bid',
+            name: 'Meilleure offre',
             selector: (row) => row.bids,
             cell: (row) => (
                 <p className='fw-bold text-base mb-0'>
@@ -94,13 +94,13 @@ function AuctionsTable({ blockAuction }) {
                             {settings.currency}
                         </span>
                     ) : (
-                        'No Bids'
+                        "Pas d'offre"
                     )}
                 </p>
             ),
         },
         {
-            name: 'Date Created',
+            name: 'Date de création',
             selector: (row) => row.dateCreated,
             cell: (row) => (
                 <div row={row}>
@@ -111,7 +111,7 @@ function AuctionsTable({ blockAuction }) {
             ),
         },
         {
-            name: 'Category',
+            name: 'Catégorie',
             selector: (row) => row.category,
             cell: (row) => (
                 <div row={row}>
@@ -127,7 +127,7 @@ function AuctionsTable({ blockAuction }) {
             cell: (row) => <p className='fw-bold text-base mb-0'>{row.royalties}%</p>,
         },
         {
-            name: 'Owner',
+            name: 'Propriétaire',
             selector: (row) => row.user,
             cell: (row) => (
                 <Link className='text-reset' to={`/users/${row.user}`}>
@@ -150,7 +150,7 @@ function AuctionsTable({ blockAuction }) {
             ),
         },
         {
-            name: 'Select',
+            name: 'Sélectionner',
             selector: (row) => row.owner,
             cell: (row) => (
                 <div className='form-check'>
@@ -191,7 +191,7 @@ function AuctionsTable({ blockAuction }) {
                                 setSelectedNfts([]);
                             }}
                         >
-                            Bloc sélectionné
+                            Bloquer le NFT
                         </button>
                     )}
                 </>

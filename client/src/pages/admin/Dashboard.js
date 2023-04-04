@@ -163,7 +163,7 @@ function Dashboard() {
             })
             .on('receipt', () => {
                 collectionCtx.loadCollection(collectionCtx.contract);
-                addToast("Cool! vous avez approuvé l'enchère selectionné", {
+                addToast("Cool! vous avez approuvé le NFT selectionné", {
                     appearance: 'success',
                 });
                 setIsMetaMaskOpened(false);
@@ -177,7 +177,7 @@ function Dashboard() {
                 <div className='col-lg-4'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5>Total des utilisateurs enregistrés</h5>
+                            <h5>Total des utilisateurs</h5>
                             <p className='h2 fw-normal mb-0'>{usersNumber}</p>
                         </div>
                     </div>
@@ -217,7 +217,7 @@ function Dashboard() {
                 <div className='col-lg-4'>
                     <div className='card shadow-0 rounded-xl p-lg-3'>
                         <div className='card-body p-4'>
-                            <h5>Profits du propriétaire de la place de marché</h5>
+                            <h5>Profits MetaMusik</h5>
                             <p className='h2 fw-normal mb-0'>
                                 {parseFloat(ownerFunds / 10 ** 18)}{' '}
                                 <span className='h5 fw-normal text-muted'>{settings.currency}</span>

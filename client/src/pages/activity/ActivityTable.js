@@ -23,7 +23,7 @@ createTheme(
 /*** ---------------------------------------------------- */
 const columns = [
     {
-        name: 'User',
+        name: 'Utilisateur',
         selector: (row) => row.address,
         cell: (row) => (
             <div row={row}>
@@ -44,7 +44,7 @@ const columns = [
         ),
     },
     {
-        name: 'Time',
+        name: 'Date',
         selector: (row) => row.time,
         cell: (row) => (
             <div row={row}>
@@ -117,7 +117,7 @@ const columns = [
             ),
     },
     {
-        name: 'Price',
+        name: 'Prix',
         selector: (row) => row.price,
         cell: (row) => (
             <div row={row}>

@@ -55,7 +55,7 @@ function TransactionsTable() {
     /*** =============================================== */
     const columns = [
         {
-            name: 'Token Transfered',
+            name: 'Jeton transféré',
             selector: (row) => row.tokenId,
             cell: (row) => (
                 <div row={row}>
@@ -99,13 +99,13 @@ function TransactionsTable() {
                             </p>
                         </div>
                     ) : (
-                        'Loading Assets...'
+                        'Chargement des actifs...'
                     )}
                 </div>
             ),
         },
         {
-            name: 'Transferred From',
+            name: 'Transféré depuis',
             selector: (row) => row.from,
             cell: (row) => (
                 <div row={row}>
@@ -144,7 +144,7 @@ function TransactionsTable() {
             ),
         },
         {
-            name: 'Transferred To',
+            name: 'Transféré à',
             selector: (row) => row.from,
             cell: (row) => (
                 <div row={row}>
@@ -183,7 +183,7 @@ function TransactionsTable() {
             ),
         },
         {
-            name: 'Time',
+            name: 'Date',
             selector: (row) => row.time,
             cell: (row) => (
                 <div row={row}>
@@ -192,7 +192,7 @@ function TransactionsTable() {
             ),
         },
         {
-            name: 'Price',
+            name: 'Prix',
             selector: (row) => row.price,
             cell: (row) => (
                 <div row={row}>

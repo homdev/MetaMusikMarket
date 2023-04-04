@@ -18,8 +18,8 @@ import AuctionItem from '../../components/general/AuctionItem';
 // SEARCH OPTIONS
 const searchOptions = [
     { label: 'NFTs', value: 'collection' },
-    { label: 'Users', value: 'users' },
-    { label: 'Auctions', value: 'auctions' },
+    { label: 'Utilisateurs', value: 'users' },
+    { label: 'Ventes aux enchères', value: 'auctions' },
 ];
 
 function SearchPage() {
@@ -133,10 +133,10 @@ function SearchPage() {
                                             name='search'
                                             placeholder={
                                                 isSearched === 'collection'
-                                                    ? 'Search our NFTs...'
+                                                    ? 'Recherchez nos NFTs...'
                                                     : isSearched === 'users'
-                                                    ? 'Search our users...'
-                                                    : 'Search our Auctions...'
+                                                    ? 'Recherchez nos utilisateurs...'
+                                                    : 'Rechercher dans nos ventes aux enchères...'
                                             }
                                             value={query}
                                             onChange={(event) => setQuery(event.target.value)}

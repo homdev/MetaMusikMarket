@@ -470,7 +470,7 @@ function AuctionItem({
                         </div>
 
                         <p className='text-muted fw-normal mb-0 lh-1'>
-                            <span className='text-xs'>L'offre la plus élevée</span>
+                            <span className='text-xs'>Offre la plus élevée</span>
                             {index !== -1 ? (
                                 <strong className='d-block fw-bold lead text-dark h2 mb-0'>
                                     {topBid > 0 ? formatPrice(topBid).toFixed(3) : 0}{' '}

@@ -88,7 +88,7 @@ function CategoryPage() {
                             <div className='text-center'>
                                 <h4 className='text-center'>Il n'y a pas de NFT pour le moment</h4>
                                 <p className='text-muted mb-3'>
-                                Dès qu'il y aura des NFT correspondant à cette catégorie, nous les rendrons ici.
+                                Dès qu'il y aura des NFT correspondant à cette catégorie, nous les afficherons ici.
                                 </p>
                                 <Link className='btn btn-gradient-primary' to='/'>
                                 Retour à l'accueil

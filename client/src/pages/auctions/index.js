@@ -87,7 +87,7 @@ function AuctionsPage() {
                             <>
                                 <h4>Il n'y a pas d'enchères en ce moment</h4>
                                 <p className='text-muted mb-3'>
-                                    Once there'll be Auctions that match is category we'll render them here
+                                Dès qu'il y aura des ventes aux enchères correspondant à cette catégorie, nous les afficherons ici.
                                 </p>
                                 <Link className='btn btn-gradient-primary' to='/'>
                                 Retour à l'accueil
