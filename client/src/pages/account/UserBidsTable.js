@@ -67,7 +67,7 @@ function UserBidsTable() {
                 auctionCtx.loadUserBids(auctionCtx.contract, web3Ctx.account);
             })
             .on('error', (error) => {
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 auctionCtx.setAuctionTransactionLoading(false);

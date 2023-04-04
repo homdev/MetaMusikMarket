@@ -97,7 +97,7 @@ function Dashboard() {
                 setIsMetaMaskOpened(true);
             })
             .on('error', (e) => {
-                addToast('Oops! Something went wrong', {
+                addToast("Oups ! Une erreur s'est produite", {
                     appearance: 'error',
                 });
                 setIsMetaMaskOpened(false);
@@ -126,7 +126,7 @@ function Dashboard() {
                 setIsMetaMaskOpened(true);
             })
             .on('error', (e) => {
-                addToast('Oops! Something went wrong', {
+                addToast("Oups ! Une erreur s'est produite", {
                     appearance: 'error',
                 });
                 setIsMetaMaskOpened(false);
@@ -156,7 +156,7 @@ function Dashboard() {
                 setIsMetaMaskOpened(true);
             })
             .on('error', (e) => {
-                addToast('Oops! Something went wrong', {
+                addToast("Oups ! Une erreur s'est produite", {
                     appearance: 'error',
                 });
                 setIsMetaMaskOpened(false);

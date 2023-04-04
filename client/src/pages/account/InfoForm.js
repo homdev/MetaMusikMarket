@@ -250,7 +250,7 @@ function InfoForm({ editInfo }) {
                     </div>
                     <div className='col-6'>
                         <button className='btn btn-primary w-100 py-2' type='submit'>
-                        Mise à jour des informations
+                        Mettre à jour les informations
                         </button>
                     </div>
                     <div className='col-6'>

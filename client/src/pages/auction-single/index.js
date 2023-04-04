@@ -390,7 +390,7 @@ function AuctionSinglePage() {
             })
             .on('error', (error) => {
                 auctionCtx.setAuctionTransactionLoading(false);
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
             });
@@ -418,7 +418,7 @@ function AuctionSinglePage() {
                 userCtx.loadActivity(userCtx.contract);
             })
             .on('error', (error) => {
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 auctionCtx.setAuctionTransactionLoading(false);
@@ -445,7 +445,7 @@ function AuctionSinglePage() {
                 userCtx.loadActivity(userCtx.contract);
             })
             .on('error', (error) => {
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 auctionCtx.setAuctionTransactionLoading(false);
@@ -475,7 +475,7 @@ function AuctionSinglePage() {
                 userCtx.loadActivity(userCtx.contract);
             })
             .on('error', (error) => {
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 auctionCtx.setAuctionTransactionLoading(false);
@@ -518,7 +518,7 @@ function AuctionSinglePage() {
                     );
                 })
                 .on('error', (error) => {
-                    addToast('Oops! an error occured', {
+                    addToast("Oups ! une erreur s'est produite", {
                         appearance: 'error',
                     });
                     collectionCtx.setNftTransactionLoading(false);

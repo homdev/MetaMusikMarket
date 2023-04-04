@@ -86,7 +86,7 @@ function Header({ netId }) {
                 closeModalHandler();
             })
             .on('error', (error) => {
-                addToast('Oops! an error occurred', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 setFundsLoading(false);
@@ -114,7 +114,7 @@ function Header({ netId }) {
                 closeModalHandler();
             })
             .on('error', (error) => {
-                addToast('Oops! an error occurred', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 setFundsLoading(false);

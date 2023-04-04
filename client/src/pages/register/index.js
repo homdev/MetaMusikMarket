@@ -16,13 +16,13 @@ function RegisterPage() {
     //      CHANGE PAGE TITLE
     /*** ------------------------------------ */
     useEffect(() => {
-        document.title = `Register | ${settings.UISettings.marketplaceBrandName}`;
+        document.title = `S'enregistrer | ${settings.UISettings.marketplaceBrandName}`;
     }, []);
 
     return (
         <>
             {marketplaceCtx.mktIsLoading ? <FullScreenLoader heading='loading' /> : null}
-            <PageBanner heading='Register' />
+            <PageBanner heading="S'enregistrer" />
             <section className='py-5'>
                 <div className='container pb-5'>
                     <div className='row'>

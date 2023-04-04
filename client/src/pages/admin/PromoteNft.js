@@ -57,7 +57,7 @@ function PromoteNft() {
                 })
                 .on('error', (error) => {
                     setMetaMaskOpened(false);
-                    addToast('Oops! an error occured', {
+                    addToast("Oups ! une erreur s'est produite", {
                         appearance: 'error',
                     });
                 });
@@ -78,7 +78,7 @@ function PromoteNft() {
                 setMetaMaskOpened(true);
             })
             .on('error', (e) => {
-                addToast('Oops! Something went wrong', {
+                addToast("Oups ! Une erreur s'est produite", {
                     appearance: 'error',
                 });
                 setMetaMaskOpened(false);

@@ -142,7 +142,7 @@ function UserInfo({ editInfo }) {
                 onClick={editInfo}
             >
                 <i className='las la-user me-2'></i>
-                Mise à jour de vos informations
+                Mettre à jour les informations
             </button>
         </>
     );

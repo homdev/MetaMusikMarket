@@ -17,16 +17,16 @@ import FullScreenLoader from '../../components/general/FullScreenLoader';
 
 // SELECT OPTIONS
 const priceOptions = [
-    { label: 'All', value: 'all' },
-    { label: 'Only on Sale', value: 'saleOnly' },
-    { label: 'Not for Sale', value: 'notForSale' },
+    { label: 'Tous', value: 'all' },
+    { label: 'Seulement en vente', value: 'saleOnly' },
+    { label: 'Pas à vendre', value: 'notForSale' },
 ];
 
 const sorting = [
-    { label: 'Newest First', value: 'newest' },
-    { label: 'Oldest First', value: 'oldest' },
-    { label: 'Highest Price', value: 'highPrice' },
-    { label: 'Lowest Price', value: 'lowPrice' },
+    { label: 'Le plus récent', value: 'newest' },
+    { label: 'Le plus ancien', value: 'oldest' },
+    { label: 'Prix le plus élevé', value: 'highPrice' },
+    { label: 'Prix le plus bas', value: 'lowPrice' },
 ];
 
 function ExplorePage() {

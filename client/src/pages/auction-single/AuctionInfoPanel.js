@@ -105,7 +105,7 @@ function AuctionInfoPanel({
                                 <li className='d-flex align-items-center justify-content-between mb-2 pb-1'>
                                     <p className='mb-0 d-flex align-items-center'>
                                         <i className='text-primary las la-percentage'></i>
-                                        <span className='ms-2'>Redevances</span>
+                                        <span className='ms-2'>Royalties</span>
                                     </p>
                                     <p className='mb-0'>{royalties}%</p>
                                 </li>

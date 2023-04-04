@@ -8,7 +8,7 @@ export const categoryOptions = [
 ];
 
 export const categorySelectBox = [
-    { label: 'All', value: 'all' },
+    { label: 'Tous', value: 'all' },
     { label: 'Art', value: 'art' },
     { label: 'Musique', value: 'music' },
     { label: 'Jeu', value: 'game' },

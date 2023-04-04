@@ -107,7 +107,7 @@ function WhiteList() {
                     userCtx.loadActivity(userCtx.contract);
                 })
                 .on('error', (e) => {
-                    addToast('Oops! an error occured', {
+                    addToast("Oups ! une erreur s'est produite", {
                         appearance: 'error',
                     });
                     setMetaMaskOpened(false);

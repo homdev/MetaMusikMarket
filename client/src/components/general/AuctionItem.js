@@ -268,7 +268,7 @@ function AuctionItem({
             })
             .on('error', (error) => {
                 auctionCtx.setAuctionTransactionLoading(false);
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
             });
@@ -298,7 +298,7 @@ function AuctionItem({
                 userCtx.loadActivity(userCtx.contract);
             })
             .on('error', (error) => {
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 auctionCtx.setAuctionTransactionLoading(false);
@@ -325,7 +325,7 @@ function AuctionItem({
                 userCtx.loadActivity(userCtx.contract);
             })
             .on('error', (error) => {
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 auctionCtx.setAuctionTransactionLoading(false);
@@ -355,7 +355,7 @@ function AuctionItem({
                 userCtx.loadActivity(userCtx.contract);
             })
             .on('error', (error) => {
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 auctionCtx.setAuctionTransactionLoading(false);
@@ -608,7 +608,7 @@ function AuctionItem({
                         <p className='mb-0 text-xs d-flex align-items-center'>
                             <i className='las la-percentage me-1'></i>
                             <span className='me-1 text-primary'>{royalties}%</span>
-                            Redevances
+                            Royalties
                         </p>
                         <p className='text-xs mb-0 d-flex align-items-center'>
                             <i className='la-sm text-primary las la-clock mx-1 text-primary'></i>

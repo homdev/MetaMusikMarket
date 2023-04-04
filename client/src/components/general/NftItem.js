@@ -193,7 +193,7 @@ function NftItem({
                     .on('error', (error) => {
                         collectionCtx.setNftTransactionLoading(false);
                         setIsModalOpen(false);
-                        addToast('Oops! an error occured', {
+                        addToast("Oups ! une erreur s'est produite", {
                             appearance: 'error',
                         });
                     });
@@ -219,7 +219,7 @@ function NftItem({
                 userCtx.loadActivity(userCtx.contract);
             })
             .on('error', (error) => {
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
                 collectionCtx.setNftTransactionLoading(false);
@@ -247,7 +247,7 @@ function NftItem({
             })
             .on('error', (error) => {
                 collectionCtx.setNftTransactionLoading(false);
-                addToast('Oops! an error occured', {
+                addToast("Oups ! une erreur s'est produite", {
                     appearance: 'error',
                 });
             });
@@ -292,7 +292,7 @@ function NftItem({
                             auctionCtx.setAuctionTransactionLoading(false);
                             setIsModalOpen(false);
                             setSaleType('');
-                            addToast('Oops! an error occured', {
+                            addToast("Oups ! une erreur s'est produite", {
                                 appearance: 'error',
                             });
                         });
