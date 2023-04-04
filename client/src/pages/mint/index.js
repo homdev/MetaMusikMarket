@@ -303,7 +303,7 @@ function MintNFTPage() {
                 .on('receipt', () => {
                     collectionCtx.loadCollection(collectionCtx.contract);
                     collectionCtx.loadTotalSupply(collectionCtx.contract);
-                    addToast('Great! you have succefully minted your NFT', {
+                    addToast('Super! vous avez minter votre NFT', {
                         appearance: 'success',
                     });
                     setIsMetaMaskOpened(false);
@@ -335,7 +335,7 @@ function MintNFTPage() {
     if (mintSuccess)
         return (
             <SuccessMessage
-                heading="Great! You've successfully minted your NFT"
+                heading="Super! vous avez minter votre NFT"
                 subheading="We're redirecting to homepage"
             />
         );
@@ -419,7 +419,7 @@ function MintNFTPage() {
                                                     ? '.mp3'
                                                     : '.mp4, .webm, .gov'
                                             }`}
-                                            placeholder='e.g. Crypto Funk'
+                                            placeholder='e.g. HipHop Beats'
                                             onChange={onSelectFile}
                                         />
                                         <label
@@ -485,7 +485,7 @@ function MintNFTPage() {
                                                     autoComplete='off'
                                                     name='nft_title'
                                                     id='nft_title'
-                                                    placeholder='e.g. Crypto Funk'
+                                                    placeholder='e.g. HipHop Beats'
                                                     value={enteredName}
                                                     onChange={enteredNameHandler}
                                                 />
@@ -653,7 +653,7 @@ function MintNFTPage() {
                                                 <>
                                                     {window.ethereum && networkId === settings.networkId ? (
                                                         <Link className='btn btn-primary' to='/register'>
-                                                            <i className='las la-user me-2'></i>S'inscrire à la Monnaie
+                                                            <i className='las la-user me-2'></i>S'inscrire pour vendre
                                                         </Link>
                                                     ) : (
                                                         <div className='py-3 px-4 d-inline-block lh-reset bg-light rounded'>

@@ -97,7 +97,7 @@ function WhiteList() {
                 })
                 .on('transactionHash', (hash) => {
                     setMetaMaskOpened(false);
-                    addToast(`Great! you have a new user to whitelist`, {
+                    addToast(`Génial! vous avez ajouté un utilisateur à la liste blanche`, {
                         appearance: 'success',
                     });
                 })
@@ -129,7 +129,7 @@ function WhiteList() {
                 })
                 .on('transactionHash', (hash) => {
                     setMetaMaskOpened(false);
-                    addToast(`Great! you have a deleted a user from whitelist`, {
+                    addToast(`Génial ! vous avez supprimé un utilisateur de la liste blanche`, {
                         appearance: 'success',
                     });
                 })

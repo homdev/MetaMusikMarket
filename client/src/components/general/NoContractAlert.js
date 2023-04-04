@@ -69,7 +69,7 @@ function NoContractAlert() {
                     </h5>
                     <p className='text-muted mb-4'>Veuillez cliquer sur le bouton ci-dessous pour voir le contenu de l'application.</p>
                     <button className='btn btn-primary' onClick={() => handleNetworkSwitch(`bsctest`)}>
-                    Réseau de commutation
+                    Basculer le Réseau
                     </button>
                 </div>
             </div>

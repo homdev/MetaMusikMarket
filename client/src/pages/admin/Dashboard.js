@@ -103,7 +103,7 @@ function Dashboard() {
                 setIsMetaMaskOpened(false);
             })
             .on('receipt', () => {
-                addToast("Cool! you've blocked the selected NFT", {
+                addToast("Cool! vous avez bloqué le NFT selectionné", {
                     appearance: 'success',
                 });
                 setIsMetaMaskOpened(false);
@@ -132,7 +132,7 @@ function Dashboard() {
                 setIsMetaMaskOpened(false);
             })
             .on('receipt', () => {
-                addToast("Cool! you've blocked the selected Auctions", {
+                addToast("Cool! vous avez bloquez l'enchère selectionné", {
                     appearance: 'success',
                 });
                 setIsMetaMaskOpened(false);
@@ -163,7 +163,7 @@ function Dashboard() {
             })
             .on('receipt', () => {
                 collectionCtx.loadCollection(collectionCtx.contract);
-                addToast("Cool! you've approved the selected Auctions", {
+                addToast("Cool! vous avez approuvé l'enchère selectionné", {
                     appearance: 'success',
                 });
                 setIsMetaMaskOpened(false);

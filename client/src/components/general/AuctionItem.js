@@ -488,7 +488,7 @@ function AuctionItem({
                             <>
                                 <div className='card-ribbon top-0 mt-4 pt-2'>
                                     {auctionEnded !== true ? (
-                                        <span className='bg-danger px-2 py-1 rounded-sm'>Appel d'offres</span>
+                                        <span className='bg-danger px-2 py-1 rounded-sm'>Enchères</span>
                                     ) : (
                                         <span className='bg-danger px-2 py-1 rounded-sm'>Pas à vendre</span>
                                     )}
@@ -535,7 +535,7 @@ function AuctionItem({
                                                             to='/register'
                                                         >
                                                             <i className='las la-user me-2'></i>
-                                                            S'inscrire à l'appel d'offres
+                                                            S'inscrire à l'enchère
                                                         </Link>
                                                     )}
                                                 </>

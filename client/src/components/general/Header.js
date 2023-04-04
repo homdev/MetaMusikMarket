@@ -387,7 +387,7 @@ function Header({ netId }) {
                                     <li className='nav-item ms-lg-2'>
                                         <Link to='/register' className='btn btn-primary'>
                                             <i className='las la-user me-2'></i>
-                                            Registre
+                                            S'inscrire
                                         </Link>
                                     </li>
                                 ))}

@@ -32,7 +32,7 @@ function Footer() {
                             target='_black'
                             rel='noopener noreferrer'
                         >
-                            <span className='lh-reset px-3 pt-2'>Télécharger le MRF</span>
+                            <span className='lh-reset px-3 pt-2'>Télécharger MetaMusik</span>
                         </a>
                     </div>
                     <div className='col-lg-3 col-md-6 mb-lg-0 pt-2'>

@@ -149,13 +149,13 @@ function PromotedNftsTable({ unpromote }) {
                             {(row.price / 10 ** 18).toFixed(2)} {settings.currency}
                         </span>
                     ) : (
-                        'Not Set'
+                        'Non défini'
                     )}
                 </p>
             ),
         },
         {
-            name: 'Date Created',
+            name: 'Date de Création',
             selector: (row) => row.dateCreated,
             cell: (row) => (
                 <div row={row}>
@@ -166,7 +166,7 @@ function PromotedNftsTable({ unpromote }) {
             ),
         },
         {
-            name: 'Category',
+            name: 'Categorie',
             selector: (row) => row.category,
             cell: (row) => (
                 <div row={row}>
@@ -182,7 +182,7 @@ function PromotedNftsTable({ unpromote }) {
             cell: (row) => <p className='fw-bold text-base mb-0'>{row.royalties}%</p>,
         },
         {
-            name: 'Owner',
+            name: 'Propriétaire',
             selector: (row) => row.owner,
             cell: (row) => (
                 <Link className='text-reset' to={`/users/${row.owner}`}>

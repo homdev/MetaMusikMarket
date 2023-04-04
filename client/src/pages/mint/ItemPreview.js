@@ -56,7 +56,7 @@ function ItemPreview({ heading, preview, title, category, author, royalties, typ
                         </div>
                     </div>
                     <div className='fw-bold lead mb-3 d-flex align-items-center justify-content-between'>
-                        <p className='mb-0'>{title === '' ? 'Glove Box' : truncateStart(title, 25)}</p>
+                        <p className='mb-0'>{title === '' ? 'MetaMusik' : truncateStart(title, 25)}</p>
                         <div className='badge bg-primary d-flex align-items-center text-white mb-0 ms-3'>
                             {formatCategory(category)}
                         </div>
@@ -105,7 +105,7 @@ function ItemPreview({ heading, preview, title, category, author, royalties, typ
 }
 
 ItemPreview.defaultProps = {
-    title: 'Glove Box',
+    title: 'MetaMusik',
     category: 'music',
     type: 'image',
     preview: '',

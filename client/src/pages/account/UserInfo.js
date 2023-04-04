@@ -32,7 +32,7 @@ function UserInfo({ editInfo }) {
                     <div className='p-4 bg-light rounded-lg'>
                         <h6>Adresse électronique</h6>
                         <p className='text-muted mb-0'>
-                            {userInfo && userInfo.email !== '' ? userInfo.email : 'Not Set'}
+                            {userInfo && userInfo.email !== '' ? userInfo.email : 'Non défini'}
                         </p>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ function UserInfo({ editInfo }) {
                     <div className='p-4 bg-light rounded-lg'>
                         <h6>Role</h6>
                         <p className='text-muted mb-0 mb-lg-3'>
-                            {userInfo && userInfo.role !== '' ? userInfo.role : 'Not Set'}
+                            {userInfo && userInfo.role !== '' ? userInfo.role : 'Non défini'}
                         </p>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ function UserInfo({ editInfo }) {
                     <div className='p-4 bg-light rounded-lg'>
                         <h6>A propos de</h6>
                         <p className='text-muted mb-0'>
-                            {userInfo && userInfo.about !== '' ? userInfo.about : 'Not Set'}
+                            {userInfo && userInfo.about !== '' ? userInfo.about : 'Non défini'}
                         </p>
                     </div>
                 </div>

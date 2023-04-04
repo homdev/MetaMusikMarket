@@ -88,7 +88,7 @@ function InfoForm({ editInfo }) {
                     userCtx.loadActivity(userCtx.contract);
                     editInfo();
                     setMetaMaskOpened(false);
-                    addToast('Cool! your data has been updated!', {
+                    addToast('Cool! vos données ont été mis à jour', {
                         appearance: 'success',
                     });
                 })
@@ -137,7 +137,7 @@ function InfoForm({ editInfo }) {
                         <input
                             type='text'
                             className={`${errors.role ? 'is-invalid' : null} form-control bg-white`}
-                            placeholder='i.e. software engineer'
+                            placeholder='i.e. Artiste, Musicien, Producteur, etc...'
                             defaultValue={userInfo ? userInfo.role : ''}
                             {...register('role', { value: userInfo ? userInfo.role : '' })}
                         />

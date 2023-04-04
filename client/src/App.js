@@ -316,7 +316,7 @@ function App() {
                     accounts[0] && userCtx.getUserInformation(userContract, accounts[0]);
                     accounts[0] && marketplaceCtx.loadUserFunds(mktContract, accounts[0]);
                     accounts[0] && auctionCtx.loadUserFunds(auctionContract, accounts[0]);
-                    addToast('Account Changed!', {
+                    addToast('Compte Changé !', {
                         appearance: 'success',
                     });
                     setRegisteredAlert(true);

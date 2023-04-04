@@ -215,7 +215,7 @@ function HomePage({ topSellers }) {
                     <div className='row gy-5 align-items-center'>
                         <div className='col-lg-6'>
                             <h2 data-aos='fade-right' data-aos-delay='100'>
-                                Comment cela fonctionne-t-il ?
+                                Comment cela fonctionne ?
                             </h2>
                             <p className='text-muted lead mb-4' data-aos='fade-up' data-aos-delay='200'>
                                 Vous pouvez acheter, vendre et échanger des NFTs sur la plateforme.

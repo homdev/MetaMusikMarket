@@ -412,7 +412,7 @@ function NftItem({
                         </div>
 
                         <p className='text-muted fw-normal mb-0 lh-1'>
-                            <span className='text-xs'>Current Price</span>
+                            <span className='text-xs'>Prix Actuel</span>
                             {hasOffer ? (
                                 owner !== web3Ctx.account ? (
                                     <strong className='d-block fw-bold lead text-dark h2 mb-0'>
@@ -424,9 +424,9 @@ function NftItem({
                                     </strong>
                                 )
                             ) : owner === web3Ctx.account ? (
-                                <strong className='d-block fw-bold lead text-dark h2 mb-0'>Not Set</strong>
+                                <strong className='d-block fw-bold lead text-dark h2 mb-0'>Pas à vendre</strong>
                             ) : (
-                                <strong className='d-block fw-bold lead text-dark h2 mb-0'>Not Set</strong>
+                                <strong className='d-block fw-bold lead text-dark h2 mb-0'>Pas à vendre</strong>
                             )}
                         </p>
                     </div>
@@ -434,7 +434,7 @@ function NftItem({
                         owner !== web3Ctx.account ? (
                             <>
                                 <div className='card-ribbon top-0 mt-4 pt-2'>
-                                    <span className='bg-danger px-2 py-1 rounded-sm'>On Sale</span>{' '}
+                                    <span className='bg-danger px-2 py-1 rounded-sm'>En Vente</span>{' '}
                                     {unlockable !== '' && (
                                         <span className='px-2 py-1 rounded-sm bg-dark text-white ms-1'>Unlockable</span>
                                     )}
@@ -447,14 +447,14 @@ function NftItem({
                                             onClick={buyHandler}
                                         >
                                             <i className='lab la-ethereum me-2'></i>
-                                            Purchase NFT
+                                            Acheter NFT
                                         </button>
                                     ) : (
                                         <>
                                             {web3Ctx.account ? (
                                                 <Link className='btn btn-primary text-nowrap' to='/register'>
                                                     <i className='las la-user me-2'></i>
-                                                    Register to Buy
+                                                    S'inscrire pour Acheter
                                                 </Link>
                                             ) : (
                                                 <>
@@ -464,7 +464,7 @@ function NftItem({
                                                             className='btn btn-gradient-primary text-nowrap'
                                                             onClick={connectWalletHandler}
                                                         >
-                                                            Connect your wallet
+                                                            Connecter le Portefeuille
                                                         </button>
                                                     )}
                                                 </>
@@ -481,7 +481,7 @@ function NftItem({
                                         className='btn btn-danger text-nowrap'
                                         onClick={cancelHandler}
                                     >
-                                        Unlist NFT from sale
+                                        Retirer de la vente
                                     </button>
                                 </div>
                             </>
@@ -489,9 +489,9 @@ function NftItem({
                     ) : owner === web3Ctx.account ? (
                         <>
                             <div className='card-ribbon top-0 mt-4 pt-2'>
-                                <span className='bg-primary px-2 py-1 rounded-sm'>Owned</span>{' '}
+                                <span className='bg-primary px-2 py-1 rounded-sm'>Propriétaire</span>{' '}
                                 {unlockable !== '' && (
-                                    <span className='px-2 py-1 rounded-sm bg-dark text-white ms-1'>Unlockable</span>
+                                    <span className='px-2 py-1 rounded-sm bg-dark text-white ms-1'>Undéblockable</span>
                                 )}
                             </div>
                             <div className='card-action'>
@@ -502,7 +502,7 @@ function NftItem({
                                         setIsModalOpen(true);
                                     }}
                                 >
-                                    Create Sale
+                                    Créer une vente
                                 </button>
                             </div>
                             <Modal
@@ -512,14 +512,14 @@ function NftItem({
                                 layout={{ width: '400px', maxWidth: '100%' }}
                             >
                                 <div className='card-body text-center py-lg-5'>
-                                    <h4 className='mb-1'>List NFT for Sale</h4>
+                                    <h4 className='mb-1'>Mettre en ventre le NFT</h4>
                                     {saleType === 'fixedPrice' && (
                                         <p className='text-muted mb-4'>
-                                            Add price to your NFT with{' '}
+                                            Ajouter un prix à votre NFT avec{' '}
                                             <span className='text-sm'> {settings.currency}</span>
                                         </p>
                                     )}
-                                    {saleType === 'auction' && <p className='text-muted mb-4'>Add Auction end date</p>}
+                                    {saleType === 'auction' && <p className='text-muted mb-4'>Ajouter une date de Fin d'enchère</p>}
 
                                     {saleType === '' && (
                                         <div className='d-flex flex-column'>
@@ -528,14 +528,14 @@ function NftItem({
                                                 type='button'
                                                 onClick={() => setSaleType('fixedPrice')}
                                             >
-                                                Fixed Price
+                                                Prix Fixe
                                             </button>
                                             <button
                                                 className='btn btn-info m-1 w-100'
                                                 type='button'
                                                 onClick={() => setSaleType('auction')}
                                             >
-                                                Open For Bids
+                                                Créer une Enchère
                                             </button>
                                         </div>
                                     )}
@@ -546,7 +546,7 @@ function NftItem({
                                                 type='number'
                                                 step='0.001'
                                                 min='0.0000000000000000000000001'
-                                                placeholder={`Price with ${settings.currency}...`}
+                                                placeholder={`Prix avec ${settings.currency}...`}
                                                 className='form-control mb-2'
                                                 required={true}
                                                 autoFocus={true}
@@ -554,18 +554,17 @@ function NftItem({
                                                 onChange={(e) => setOfferPrice(e.target.value)}
                                             />
                                             <button type='submit' className='btn btn-primary w-100 rounded-sm mb-2'>
-                                                Create sale
+                                                Créer une vente
                                             </button>
                                             <p className='mb-0 text-center text-muted'>
-                                                You'll get
+                                                Vous obtenez
                                                 <span className='text-primary fw-normal mx-1'>
                                                     {offerPrice
                                                         ? offerPrice -
                                                           (parseFloat(offerPrice) * settings.saleCommission) / 1000
                                                         : 0}
                                                 </span>
-                                                <span className='text-sm'> {settings.currency}</span> after marketplace
-                                                commission
+                                                <span className='text-sm'> {settings.currency}</span> après Commission par MetaMusik
                                             </p>
                                         </form>
                                     )}
@@ -575,7 +574,7 @@ function NftItem({
                                             <div className='row gy-3 text-start'>
                                                 <div className='col-12'>
                                                     <label className='form-label text-start fw-bold'>
-                                                        Auction Ends At
+                                                        Date Fin D'enchère
                                                     </label>
                                                     <input
                                                         className='form-control'
@@ -590,7 +589,7 @@ function NftItem({
                                                         type='submit'
                                                         className='btn btn-primary w-100 rounded-sm mb-2'
                                                     >
-                                                        Create sale
+                                                        Créer une vente
                                                     </button>
                                                 </div>
                                             </div>
@@ -602,7 +601,7 @@ function NftItem({
                     ) : (
                         <>
                             <div className='card-ribbon top-0 mt-4 pt-2'>
-                                <span className='bg-danger px-2 py-1 rounded-sm'>Not for sale</span>{' '}
+                                <span className='bg-danger px-2 py-1 rounded-sm'>N'est pas à vendre</span>{' '}
                                 {unlockable !== '' && (
                                     <span className='px-2 py-1 rounded-sm bg-dark text-white ms-1'>Unlockable</span>
                                 )}

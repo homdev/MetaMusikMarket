@@ -84,7 +84,7 @@ function AuctionCta({ topBid, isCurrentBidder, setIsModalOpen, cancelHandler, wi
                             {window.ethereum && networkId === settings.networkId && (
                                 <Link className='btn btn-primary text-nowrap' to='/register'>
                                     <i className='las la-user me-2'></i>
-                                    S'inscrire à l'appel d'offres
+                                    S'inscrire à l'enchère
                                 </Link>
                             )}
                         </>

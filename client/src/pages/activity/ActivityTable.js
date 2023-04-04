@@ -62,7 +62,7 @@ const columns = [
                 </div>
             ) : row.type === 'Mint NFT Token' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-primary'>Jeton NFT à la Monnaie</span>
+                    <span className='fw-bold badge lh-reset bg-primary'>Jeton NFT à la vente</span>
                 </div>
             ) : row.type === 'Make Offer' ? (
                 <div row={row}>
@@ -74,7 +74,7 @@ const columns = [
                 </div>
             ) : row.type === 'Claim Funds' ? (
                 <div row={row}>
-                    <span className='fw-bold badge lh-reset bg-success'>Collecter les bénéfices</span>
+                    <span className='fw-bold badge lh-reset bg-success'>Collect des bénéfices</span>
                 </div>
             ) : row.type === 'Cancel Offer' ? (
                 <div row={row}>

@@ -95,7 +95,7 @@ function RegisterForm() {
                     analyticsCtx.loadTransactions(analyticsCtx.contract);
                     userCtx.loadActivity(userCtx.contract);
                     setMetaMaskOpened(false);
-                    addToast('Cool! your data has been updated!', {
+                    addToast('Cool! vos données ont été mis à jour !', {
                         appearance: 'success',
                     });
                     history.push('/my-account');
@@ -138,7 +138,7 @@ function RegisterForm() {
                         <input
                             type='text'
                             className={`${errors.role ? 'is-invalid' : null} form-control bg-white`}
-                            placeholder='i.e. software engineer'
+                            placeholder='i.e. Artsite, Musicien, etc.'
                             {...register('role')}
                         />
                     </div>
@@ -147,7 +147,7 @@ function RegisterForm() {
                         <input
                             type='url'
                             className={`${errors.avatar ? 'is-invalid' : null} form-control bg-white`}
-                            placeholder='Image URL for your avatar...'
+                            placeholder='Image URL pour votre avatar...'
                             {...register('avatar', {
                                 pattern: {
                                     value: /http(s?)(:\/\/)([a-zA-z0-9][^\s]*)(.com|.net|.gov|.org|.in|.png|.svg|.jpg|.jpeg|.zip)/,
@@ -161,7 +161,7 @@ function RegisterForm() {
                         <input
                             type='url'
                             className={`${errors.header ? 'is-invalid' : null} form-control bg-white`}
-                            placeholder='Image URL for your header...'
+                            placeholder='Image URL pour votre bannière...'
                             {...register('header', {
                                 pattern: {
                                     value: /http(s?)(:\/\/)([a-zA-z0-9][^\s]*)(.com|.net|.gov|.org|.in|.png|.svg|.jpg|.jpeg|.zip)/,
@@ -175,7 +175,7 @@ function RegisterForm() {
                         <textarea
                             className={`${errors.about ? 'is-invalid' : null} form-control bg-white`}
                             rows='7'
-                            placeholder='Enter some brief about yourself'
+                            placeholder='Entrez quelques mots sur vous...'
                             {...register('about')}
                         ></textarea>
                     </div>

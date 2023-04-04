@@ -8,7 +8,7 @@ export const settings = {
         contactFormAddressId: 'xyyodedw',
         newsletterAddressId: 'xlezgplp',
         usedNetworkName: 'Ganach Local Server',
-        heroImages: ['/cube-2.png', '/cube-2.png', '/cube-2.png'],
+        heroImages: ['/cube-4.png', '/cube-4.png', '/cube-4.png'],
     },
     currency: 'ETH',
     IPFSProjectID: '2N5jbKYA25zK3BaIaCuCfBibmJF',

@@ -51,7 +51,7 @@ function PromoteNft() {
                 .on('receipt', () => {
                     marketplaceCtx.laodPromotionPrice(marketplaceCtx.contract);
                     setMetaMaskOpened(false);
-                    addToast('Great! you have set the promotion price', {
+                    addToast('Super! vous avez définie le prix pour la promotion', {
                         appearance: 'success',
                     });
                 })
@@ -90,7 +90,7 @@ function PromoteNft() {
                     collectionCtx.contract,
                     auctionCtx.auctions.filter((auc) => auc.isActive === true)
                 );
-                addToast("Cool! you've unpromoted the selected NFTs", {
+                addToast("Cool! vous avez non promu le NFT selectionné", {
                     appearance: 'success',
                 });
                 setMetaMaskOpened(false);
@@ -112,7 +112,7 @@ function PromoteNft() {
                                     </p>
                                 </div>
                                 <div className='col-lg-6 text-lg-end'>
-                                    <p className='mb-0'>Current Price</p>
+                                    <p className='mb-0'>Prix Actuel</p>
                                     <h5 className='text-primary mb-0'>
                                         {formatPrice(marketplaceCtx.promotionPrice).toFixed(2)} {settings.currency}
                                     </h5>

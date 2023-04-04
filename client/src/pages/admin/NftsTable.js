@@ -149,7 +149,7 @@ function NftTable({ blockNfts }) {
                             {(row.price / 10 ** 18).toFixed(2)} {settings.currency}
                         </span>
                     ) : (
-                        'Not Set'
+                        'Non défini'
                     )}
                 </p>
             ),
